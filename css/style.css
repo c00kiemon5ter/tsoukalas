@@ -1,0 +1,143 @@
+
+{
+    margin: 0;
+    padding: 0;
+}
+
+header, footer, nav, article {
+    display: block;
+}
+
+body {
+    margin: 10px auto;
+    font: 13px/22px Helvetica, Arial, sans-serif;
+    background: #f0f0f0;
+    width: 940px;
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 44px;
+    padding: 22px 0;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 11px 0;
+}
+
+p {
+    padding-bottom: 22px;
+}
+
+#topmenu {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: url("topmenu.png");
+}
+
+#topmenu ul {
+    width: 940px;
+    margin: 0 auto;
+    list-style: none;
+}
+
+#topmenu ul li {
+    float: left;
+}
+
+#topmenu ul li a {
+    display: block;
+    margin-right: 20px;
+    width: 140px;
+    font-size: 14px;
+    line-height: 44px;
+    text-align: center;
+    text-decoration: none;
+    color: #777;
+}
+
+#topmenu ul li a:hover {
+    color: #ccc;
+}
+
+#topmenu ul li.selected a {
+    color: #fff;
+}
+
+#intro {
+    margin-top: 66px;
+    padding: 44px;
+    background: #467612 url("banner.png") no-repeat;
+
+    background-size: 100%;
+    -webkit-background-size: 100%;  
+    -o-background-size: 100%;  
+    -khtml-background-size: 100%; 
+
+    border-radius: 22px;
+    -moz-border-radius: 22px;
+    -webkit-border-radius: 22px;
+}
+
+#intro h2, #intro p {
+    width: 336px;  
+}
+
+#intro h2 {  
+    padding: 0 0 22px 0;  
+    font-weight: normal  
+    color: #fff;  
+}  
+  
+#intro p {  
+    padding: 0;  
+    color: #d9f499;  
+}
+
+#intro {
+    background: #467612 url("bannerbg.png") top left (287px 100%) repeat-x,  
+                        url("bannerfg.png") top rightright (653px 100%) no-repeat;
+}
+
+#content {
+    display: table;
+}
+
+#main {
+    display: table-cell;
+    width: 670px;
+    padding-left: 22px;
+}
+
+#leftmenu {
+    display: table-cell;
+    width: 250px;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: #222;
+}
+
+footer div {
+    display: table;
+    margin: 0 auto;
+    padding: 44px 0;
+    width: 940px;
+    color: #777;
+}
+
+footer div section {
+    display: table-cell;
+    width: 400px;
+}
+
+footer div #copyright {
+    padding-right: 20px;
+}
+

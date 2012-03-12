@@ -1,0 +1,45 @@
+
+notes
+---------
+ * imitate pouliasis
+ * blue bg w/ some red on logo etc
+ * logo on top -- έχω και την κάρτα του
+ * menu on top (probably) and side
+    - Αρχική
+    - Διπλώματα
+    - Δικαιολογητικά
+    - Επικοινωνία (gmaps / email / phone)
+ * slideshow pics
+ * small links/texts on bottom (see relative sites)
+ * επισκεψιμότητα (analytics?)
+ * online test ←
+ * "έμφαση" στο Δίπλωμα αυτόματου αυτοκινήτου.
+
+draft
+-----
+
+```
+   +-----------------------------------------------+
+   |                                               |
+   |  Logo  [ .............. menu .............. ] |
+   |                                               |
+   |  +---+  .----------------------------------.  |
+   |  |   |  |                                  |  |
+   |  |   |  |        slideshow photos          |  |
+   |  |   |  |                                  |  |
+   |  |   |  `---------------------------------'   |
+   |  |   |                                        |
+   |  |   |  [ ...          text            ... ]  |
+   |  |   |  [ ...          text            ... ]  |
+   |  +---+                                        |
+   |                                               |
+   +-----------------------------------------------+
+```
+
+
+relative sites
+--------------
+ * [pouliasis](http://pouliasis-driving.gr)
+ * [kathodigisi](http://kathodigisi.gr)
+ * [zografos](http://zografos.com)
+

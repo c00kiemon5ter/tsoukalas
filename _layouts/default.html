@@ -1,0 +1,109 @@
+---
+desc: Σχολή Οδηγών - Πάνος Τσουκαλάς
+keywords: drive license σχολή οδηγών τσουκαλάς παναγιώτης πάνος αυτοκίνητο δίπλωμα
+author: www.webwizards.gr
+favico: favicon.ico
+css: css/style.css
+logo:
+    - img: img/logo.png
+      alt: Σχολή Οδηγών Τσουκαλάς
+topmenu:
+    - id:  Αρχικη
+      url: index.html
+    - id:  Sitemap
+      url: sitemap
+    - id:  Eπικοινωνια
+      url: contact.html
+    - id:  Online Test
+      url: drivetest.html
+leftmenu:
+    - id:  Αυτόματο Εκπαιδευτικό Όχημα
+      url: autocar
+    - id:  Manual Εκπαιδευτικό Όχημα
+      url: manualcar
+    - id:  Διπλώματα Οδήγησης
+      url: licenses.html
+    - id:  Υπηρεσίες
+      url: services
+    - id:  Μετεκπαιδεύσεις
+      url: metatrain
+    - id:  Photo Gallery
+      url: gallery
+jscripts:
+    - url: js/jquery.min.js
+copyright:
+    - page: tsoukalas.net
+      year: 2012
+      owner: webwizards
+      url: http://webwizards.gr
+---
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="author" content="{{ page.author }}" />
+        <meta name="description" content="{{ page.description }}" />
+        <meta name="keywords" content="{{ page.keywords }}" />
+        <meta name="language" content="el" />
+        <title>{{ page.title }}</title>
+        <link rel="shortcut icon" type="image/x-icon" href="{{ page.favico }}" />
+        <link rel="stylesheet" href="{{ page.css }}" type="text/css" media="screen, projection" />
+        {% for js in page.jscripts %}
+        <script type="text/javascript" src="{{ js.url }}"></script>
+        {% endfor %}
+    </head>
+    <body>
+
+        <header>
+            {% for l in page.logo %}
+            <h1><a href="/"><img class="logo" src="{{ l.img }}" alt="{{ l.alt }}"/></a></h1>
+            {% endfor %}
+        </header>
+
+        <!-- Top Menu -->
+        <nav id="topmenu">
+            <header><h3></h3></header>
+            <ul>
+                {% for m in page.topmenu %}
+                <li><a href="{{ m.url }}">{{ m.id }}</a></li>
+                {% endfor %}
+            </ul>
+        </nav>
+
+        <!-- Introduction -->
+        <section id="intro">
+            <header>
+                <h2>Καλως ορίσατε στην ιστοσελίδα μας.<br />Tsoukalas online.</h2>
+            </header>
+        </section>
+
+        <!-- Main content area -->
+        <section id="content">
+            <!-- Left Sidebar Menu -->
+            <nav id="leftmenu">
+                <header><h3></h3></header>
+                <ul>
+                    {% for m in page.leftmenu %}
+                    <li><a href="{{ m.url }}">{{ m.id }}</a></li>
+                    {% endfor %}
+                </ul>
+            </nav>
+            <!-- Content -->
+            <section id="main">
+                {{ content }}
+            </section>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div>
+                <section id="copyright">
+                    {% for c in page.copyright %}
+                    <p class="copyright">Copyright &copy; {{ c.page }} {{ c.year }} <a href="{{ c.url }}">{{ c.owner }}</a></p>
+                    {% endfor %}
+                </section>
+            </div>
+        </footer>
+
+    </body>
+</html>

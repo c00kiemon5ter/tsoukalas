@@ -1,0 +1,19 @@
+---
+layout: default
+title: Επικοινωνία
+---
+
+
+Επικοινωνία
+-----------
+
+Βρισκόμαστε στην όδό [Πρίγκιπος Πέτρου](http://g.co/maps/6j3e3), αριθμός `26`.
+
+<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+src="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=%CE%A0%CF%81%CE%B9%CE%B3%CE%BA%CE%B9%CF%80%CE%BF%CF%82+%CE%A0%CE%AD%CF%84%CF%81%CE%BF%CF%85+26+%CE%92%CE%BF%CF%8D%CE%BB%CE%B1&amp;aq=&amp;sll=37.974786,23.736305&amp;sspn=0.260621,0.2108&amp;ie=UTF8&amp;hq=&amp;hnear=Prigkipos+Petrou+26,+Voula+16674,+Anatoliki+Attiki,+Greece&amp;t=m&amp;ll=37.853814,23.758278&amp;spn=0.008132,0.013733&amp;z=16&amp;iwloc=A&amp;output=embed"></iframe><br
+/><small><a
+href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=%CE%A0%CF%81%CE%B9%CE%B3%CE%BA%CE%B9%CF%80%CE%BF%CF%82+%CE%A0%CE%AD%CF%84%CF%81%CE%BF%CF%85+26+%CE%92%CE%BF%CF%8D%CE%BB%CE%B1&amp;aq=&amp;sll=37.974786,23.736305&amp;sspn=0.260621,0.2108&amp;ie=UTF8&amp;hq=&amp;hnear=Prigkipos+Petrou+26,+Voula+16674,+Anatoliki+Attiki,+Greece&amp;t=m&amp;ll=37.853814,23.758278&amp;spn=0.008132,0.013733&amp;z=16&amp;iwloc=A"
+style="color:#0000FF;text-align:left">View Larger Map</a></small>
+
+> Τηλέφωνα επικοινωνίας: **210-8995200**,  κινητό: **694-5051300**
+

@@ -1,0 +1,4 @@
+markdown: kramdown
+pygments: false
+safe: true
+destination: /tmp/_site
