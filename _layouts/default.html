@@ -7,8 +7,11 @@ css: css/style.css
 logo:
     - img: img/logo.png
       alt: Σχολή Οδηγών Τσουκαλάς
+banner:
+    - img: img/banner.png
+      alt: Σχολή Οδηγών Τσουκαλάς
 topmenu:
-    - id:  Αρχικη
+    - id:  Αρχική
       url: index.html
     - id:  Sitemap
       url: sitemap
@@ -55,14 +58,19 @@ copyright:
     <body>
 
         <header>
-            {% for l in page.logo %}
-            <h1><a href="/"><img class="logo" src="{{ l.img }}" alt="{{ l.alt }}"/></a></h1>
-            {% endfor %}
+            <h1>
+                <a href="/">
+                    {% for l in page.logo %}
+                    <figure id="logo">
+                        <img class="logo" src="{{ l.img }}" alt="{{ l.alt }}"/>
+                    </figure>
+                    {% endfor %}
+                </a>
+            </h1>
         </header>
 
         <!-- Top Menu -->
         <nav id="topmenu">
-            <header><h3></h3></header>
             <ul>
                 {% for m in page.topmenu %}
                 <li><a href="{{ m.url }}">{{ m.id }}</a></li>
@@ -73,7 +81,15 @@ copyright:
         <!-- Introduction -->
         <section id="intro">
             <header>
-                <h2>Καλως ορίσατε στην ιστοσελίδα μας.<br />Tsoukalas online.</h2>
+                <h1>
+                    <a href="/">
+                        {% for b in page.banner %}
+                        <figure id="banner">
+                            <img class="banner" src="{{ b.img }}" alt="{{ b.alt }}"/>
+                        </figure>
+                        {% endfor %}
+                    </a>
+                </h1>
             </header>
         </section>
 
@@ -81,7 +97,7 @@ copyright:
         <section id="content">
             <!-- Left Sidebar Menu -->
             <nav id="leftmenu">
-                <header><h3></h3></header>
+                <!-- <header><h3></h3></header> -->
                 <ul>
                     {% for m in page.leftmenu %}
                     <li><a href="{{ m.url }}">{{ m.id }}</a></li>
@@ -96,13 +112,11 @@ copyright:
 
         <!-- Footer -->
         <footer>
-            <div>
-                <section id="copyright">
-                    {% for c in page.copyright %}
-                    <p class="copyright">Copyright &copy; {{ c.page }} {{ c.year }} <a href="{{ c.url }}">{{ c.owner }}</a></p>
-                    {% endfor %}
-                </section>
-            </div>
+            <section id="copyright">
+                {% for c in page.copyright %}
+                <p class="copyright">Copyright &copy; {{ c.page }} {{ c.year }} <a href="{{ c.url }}">{{ c.owner }}</a></p>
+                {% endfor %}
+            </section>
         </footer>
 
     </body>
