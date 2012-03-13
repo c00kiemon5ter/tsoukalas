@@ -30,9 +30,11 @@ draft
    |  |   |  `---------------------------------'   |
    |  |   |                                        |
    |  |   |  [ ...          text            ... ]  |
-   |  |   |  [ ...          text            ... ]  |
-   |  +---+                                        |
+   |  +---+  [ ...          text            ... ]  |
    |                                               |
+   |  +-----------------------------------------+  |
+   |  |                 footer                  |  |
+   |  +-----------------------------------------+  |
    +-----------------------------------------------+
 ```
 
@@ -42,4 +44,6 @@ relative sites
  * [pouliasis](http://pouliasis-driving.gr)
  * [kathodigisi](http://kathodigisi.gr)
  * [zografos](http://zografos.com)
+ * [papagiannidisoe](http://www.papagiannidisoe.gr/)
+ * [eco-driving](http://ecodriving.gr/)
 
