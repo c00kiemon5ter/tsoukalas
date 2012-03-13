@@ -1,0 +1,64 @@
+#!/bin/bash
+
+set -e
+
+: "${cat:=1}"
+: "${lang:=1}"
+
+GREP_OPTIONS=""
+declare -A bools=( [1]="true" [0]="false" )
+declare -A langs=( [1]="el"   [2]="en"
+                   [3]="ru"   [4]="al" )
+
+cat <<EOF
+var questions =
+{
+    "test": {
+        "language": "${langs[$lang]}",
+        "category": "$cat",
+        "version": "1",
+        "rel_date": "2012-03-12",
+        "questions": [
+EOF
+
+# QCod  QKateg  QPag  QLang  QLect  QPhoto  QSound  QBook
+# qid   cat     qpag  lang   q      pic     snd     bk
+while IFS="," read -r qid cat qpag lang qstr; do
+    IFS=\" read -r _ q _ pic _ snd _ bk _ <<< "$qstr"
+    [[ $pic == "0" ]] && pic='null' || pic="\"$pic\""
+
+    cat <<EOF
+            {
+                "image": $pic,
+                "question": "$q",
+                "choices": [
+EOF
+
+    # AQCod  AAA  ALect  ACorr  ASound
+    # aid    n    ans    crc    snd
+    while IFS=, read -r aid n astr; do
+        IFS=\" read -r _ ans crc snd _ <<< "$astr"
+        crc="${bools[${crc:1:1}]}"
+
+        cat <<EOF
+                    {"answer": "$ans","status": $crc},
+EOF
+    done < <(grep "^$qid," Answers.csv)
+
+    cat <<EOF
+                ]
+            },
+EOF
+
+
+    #printf "qid:%s\tcat:%s\tqpag:%s\tlang:%s\tpic:%s\n" \
+    #      "$qid"  "$cat"  "$qpag"  "$lang"  "$pic"
+done < <(grep "^[0-9]\+,$cat,[0-9]\+,$lang" Questions.csv)
+
+
+cat <<EOF
+        ]
+    }
+};
+EOF
+
