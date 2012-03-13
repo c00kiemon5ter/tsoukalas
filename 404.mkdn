@@ -6,6 +6,8 @@ layout: default
 Page not found
 --------------
 
+![page not found](img/signs/stop.png)
+
 The requested page was not found on the server.
 
 ← Go to the [homepage](/)

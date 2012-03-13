@@ -7,9 +7,6 @@ css: css/style.css
 logo:
     - img: img/logo.png
       alt: Σχολή Οδηγών Τσουκαλάς
-banner:
-    - img: img/banner.png
-      alt: Σχολή Οδηγών Τσουκαλάς
 topmenu:
     - id:  Αρχική
       url: index.html
@@ -77,21 +74,6 @@ copyright:
                 {% endfor %}
             </ul>
         </nav>
-
-        <!-- Introduction -->
-        <section id="intro">
-            <header>
-                <h1>
-                    <a href="/">
-                        {% for b in page.banner %}
-                        <figure id="banner">
-                            <img class="banner" src="{{ b.img }}" alt="{{ b.alt }}"/>
-                        </figure>
-                        {% endfor %}
-                    </a>
-                </h1>
-            </header>
-        </section>
 
         <!-- Main content area -->
         <section id="content">
