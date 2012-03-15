@@ -29,7 +29,7 @@ while IFS="," read -r qid cat qpag lang qstr; do
 
     cat <<EOF
             {
-                "image": $pic,
+                "image": ${pic,,},
                 "question": "$q",
                 "choices": [
 EOF
