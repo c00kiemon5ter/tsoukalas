@@ -28,17 +28,20 @@ h3 {
 }
 
 section, article, p {
-    padding-bottom: 22px;
+    padding: 22px 0;
 }
 
+header figure {
+    text-align: center;
+}
+
+/*
 #topmenu {
     position: absolute;
     left: 0;
     right: 0;
     text-align: center;
-    background-color: #069; /* FIXME: replace with image on ul and li */
 }
-
 #topmenu ul li {
     display: inline;
     margin: auto 5px;
@@ -56,23 +59,82 @@ section, article, p {
     text-align: center;
     text-decoration: none;
 }
-
 #topmenu ul li a:hover {
     color: red;
 }
-
 #topmenu ul li.selected a {
     color: #fff;
 }
+*/
 
-#intro {
-    margin-top: 100px;
-    padding: 22px;
+.lavaLamp {
+    position: relative;
+    overflow: hidden;
+	background: url("../img/menu_bg.png") repeat;
+    padding: 6px;
+
+    border-radius : 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,.25);
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+    -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+}
+.lavaLamp li {          /* flow horizantally */
+    float: left;
+    list-style-type: none;
+    margin: 0 6px;
+}
+.lavaLamp li.back {     /* the bg */
+    position: absolute; /* moves wherever we tell it to */
+    z-index: 8;         /* between panel and links/text */
+    height: 30px;
+    margin: 2px 0;      /* try to center it */
+    background: url("../img/itembg.png") no-repeat right -30px;
+
+    border-radius : 8px;
+    border-radius : 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+}
+.lavaLamp li.back .left { /* the moving part mixed with .back */
+    height: 30px;
+    margin-right: 9px;
+    background: url("../img/itembg.png") no-repeat top left;
+
+    border-radius : 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+}
+#topmenu li:hover {  /* background fading shadow */
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    background: rgba(0,0,0,.20);
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+}
+#topmenu li a {
+    display: block;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    margin: auto 5px;
+    padding: 0 30px;
+    height: 30px;
+    top: 7px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
 }
 
-#intro figure {
-    background: url("../img/banner.png") no-repeat; /* FIXME */
+#content {
+    display: table;
+}
 
+#intro header figure {
     background-size: 100%;
     -webkit-background-size: 100%;
     -o-background-size: 100%;
@@ -81,15 +143,6 @@ section, article, p {
     border-radius: 22px;
     -moz-border-radius: 22px;
     -webkit-border-radius: 22px;
-}
-
-#intro < h2 {
-    font-weight: normal;
-    color: #fff;
-}
-  
-#content {
-    display: table;
 }
 
 article > p {

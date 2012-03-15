@@ -12,7 +12,7 @@ topmenu:
       url: index.html
     - id:  Sitemap
       url: sitemap
-    - id:  Eπικοινωνια
+    - id:  Eπικοινωνία
       url: contact.html
     - id:  Online Test
       url: drivetest.html
@@ -31,6 +31,9 @@ leftmenu:
       url: gallery
 jscripts:
     - url: js/jquery.min.js
+    - url: js/jquery.easing.js
+    - url: js/jquery.easing.compatibility.js
+    - url: js/jquery.lavalamp.min.js
 copyright:
     - page: tsoukalas.net
       year: 2012
@@ -51,6 +54,7 @@ copyright:
         {% for js in page.jscripts %}
         <script type="text/javascript" src="{{ js.url }}"></script>
         {% endfor %}
+        <script type="text/javascript">$(function() { $(".lavaLamp").lavaLamp({ fx: "backout", speed: 700 })});</script>
     </head>
     <body>
 
@@ -68,7 +72,7 @@ copyright:
 
         <!-- Top Menu -->
         <nav id="topmenu">
-            <ul>
+            <ul class="lavaLamp">
                 {% for m in page.topmenu %}
                 <li><a href="{{ m.url }}">{{ m.id }}</a></li>
                 {% endfor %}
