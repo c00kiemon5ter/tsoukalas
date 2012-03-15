@@ -70,7 +70,7 @@ header figure {
 .lavaLamp {
     position: relative;
     overflow: hidden;
-	background: url("../img/menu_bg.png") repeat;
+	background: url("../img/topmenu/menu_bg_road.png") repeat;
     padding: 6px;
 
     border-radius : 10px;
@@ -80,17 +80,25 @@ header figure {
     -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
     -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
 }
-.lavaLamp li {          /* flow horizantally */
+
+.lavaLamp li { /* flow horizantally */
     float: left;
     list-style-type: none;
     margin: 0 6px;
 }
+.lavaLamp li:nth-last-child(2) { /* flow horizantally */
+    float: right;
+    list-style-type: none;
+    margin: 0 6px;
+    background: url(../img/topmenu/cone.png) no-repeat;
+    background-size: 28px;
+}
 .lavaLamp li.back {     /* the bg */
     position: absolute; /* moves wherever we tell it to */
     z-index: 8;         /* between panel and links/text */
-    height: 30px;
-    margin: 2px 0;      /* try to center it */
-    background: url("../img/itembg.png") no-repeat right -30px;
+    height: 26px;
+    margin: auto 0;
+    background: url("../img/topmenu/item_bg_car.png") no-repeat right -30px;
 
     border-radius : 8px;
     border-radius : 8px;
@@ -98,15 +106,16 @@ header figure {
     -moz-border-radius: 8px;
 }
 .lavaLamp li.back .left { /* the moving part mixed with .back */
-    height: 30px;
+    height: 26px;
     margin-right: 9px;
-    background: url("../img/itembg.png") no-repeat top left;
+    background: url("../img/topmenu/item_bg_car.png") no-repeat top left;
 
     border-radius : 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
 }
-#topmenu li:hover {  /* background fading shadow */
+
+.lavaLamp li:hover {  /* background fading shadow */
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -114,6 +123,11 @@ header figure {
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
 }
+.lavaLamp li:hover:nth-last-child(2) {
+    background: rgba(0,0,0,.20) url(../img/topmenu/cone.png) /*95%*/ no-repeat;
+    background-size: 20px;
+}
+
 #topmenu li a {
     display: block;
     float: left;
