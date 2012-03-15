@@ -98,7 +98,7 @@ header figure {
     z-index: 8;         /* between panel and links/text */
     height: 26px;
     margin: auto 0;
-    background: url("../img/topmenu/item_bg_car.png") no-repeat right -30px;
+    background: url("../img/topmenu/item_bg_car_inv.png") no-repeat right -30px;
 
     border-radius : 8px;
     border-radius : 8px;
@@ -108,7 +108,7 @@ header figure {
 .lavaLamp li.back .left { /* the moving part mixed with .back */
     height: 26px;
     margin-right: 9px;
-    background: url("../img/topmenu/item_bg_car.png") no-repeat top left;
+    background: url("../img/topmenu/item_bg_car_inv.png") no-repeat top left;
 
     border-radius : 8px;
     -webkit-border-radius: 8px;
@@ -119,12 +119,12 @@ header figure {
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
-    background: rgba(0,0,0,.20);
+    background: rgba(0,0,0,.40);
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
 }
 .lavaLamp li:hover:nth-last-child(2) {
-    background: rgba(0,0,0,.20) url(../img/topmenu/cone.png) /*95%*/ no-repeat;
+    background: rgba(0,0,0,.20) url(../img/topmenu/cone.png) 95% no-repeat;
     background-size: 20px;
 }
 
