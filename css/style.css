@@ -11,7 +11,7 @@ header, footer, nav, article {
 body {
     margin: 10px auto;
     font: 13px/22px Helvetica, Arial, sans-serif;
-    background: #BED7F7;
+    background: #BED7F7 url("../img/background.png") no-repeat bottom left;
     width: 940px;
 }
 
@@ -171,13 +171,21 @@ article > p {
 #leftmenu ul {
     margin: 10px;
     padding: 10px;
-    background: #069; /* FIXME visualize space */
+    background: #646464; /* FIXME visualize space */
+    border-radius : 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
 }
 
 #leftmenu ul li {
     list-style-type: none;
     margin: 10px;
     padding: 10px 20px;
+    border:2px solid #575757;
+    overflow: hidden;
+    border-radius : 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
 }
 
 #leftmenu ul li a {
@@ -194,13 +202,13 @@ footer {
     position: absolute;
     left: 0;
     width: 100%;
-    background-color: #069; /* #222 */
+    background: url("../img/footer.png") repeat bottom left;
 }
 
 footer #copyright {
     width: 940px;
     margin: 0 auto;
-    padding: 44px 0;
+    padding: 19px 0;
     color: whitesmoke;
     text-align: center;
 }
