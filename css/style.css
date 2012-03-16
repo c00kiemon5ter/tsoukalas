@@ -9,10 +9,10 @@ header, footer, nav, article {
 }
 
 body {
-    margin: 10px auto;
     font: 13px/22px Helvetica, Arial, sans-serif;
-    background: #BED7F7 url("../img/background.png") no-repeat bottom left;
-    width: 940px;
+    background: #BED7F7 url("../img/bg.png") repeat bottom left;
+    margin: 0 auto;
+    padding: 0;
 }
 
 h2 {
@@ -31,41 +31,23 @@ section, article, p {
     padding: 22px 0;
 }
 
-header figure {
-    text-align: center;
+div.idented {
+    margin: 10px auto;
+    width: 940px;
 }
 
-/*
-#topmenu {
-    position: absolute;
-    left: 0;
-    right: 0;
-    text-align: center;
+#header {
+    background: url(../img/header.png) repeat-x;
+    height: 150px;
 }
-#topmenu ul li {
-    display: inline;
-    margin: auto 5px;
-    list-style-type: none;
+#header h1,
+#header h1 a,
+#header h1 a figure {
+    margin: 0;
+    padding: 0;
+    left:0;
+    top:0;
 }
-
-#topmenu ul li a {
-    display: inline;
-    padding-right: 55px;
-    padding-left: 55px;
-    line-height: 44px;
-    color: whitesmoke;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-}
-#topmenu ul li a:hover {
-    color: red;
-}
-#topmenu ul li.selected a {
-    color: #fff;
-}
-*/
 
 .lavaLamp {
     position: relative;
@@ -167,27 +149,27 @@ article > p {
     display: table-cell;
     width: 250px;
 }
-
 #leftmenu ul {
-    margin: 10px;
-    padding: 10px;
-    background: #646464; /* FIXME visualize space */
-    border-radius : 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-}
+    margin: 20px;
+    padding: 5px;
+    background: #79cbe3; /* FIXME visualize space */
 
+    border-radius : 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+}
 #leftmenu ul li {
     list-style-type: none;
     margin: 10px;
-    padding: 10px 20px;
+    padding: 10px;
     border:2px solid #575757;
+    background: #646464; /* FIXME visualize space */
+
     overflow: hidden;
     border-radius : 12px;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
 }
-
 #leftmenu ul li a {
     color: whitesmoke;
 }
@@ -199,17 +181,26 @@ article > p {
 }
 
 footer {
+    display: table;
+
     position: absolute;
     left: 0;
     width: 100%;
-    background: url("../img/footer.png") repeat bottom left;
+    background: url("../img/footer.png") repeat-x left bottom;
 }
-
 footer #copyright {
-    width: 940px;
+    display: table-cell;
+    width: 60%;
+
     margin: 0 auto;
     padding: 19px 0;
     color: whitesmoke;
     text-align: center;
+}
+footer #road {
+    display: table-cell;
+    width: 30%;
+    right: 0;
+    background: url(../img/road.png) right bottom;
 }
 

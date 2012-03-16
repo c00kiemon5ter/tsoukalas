@@ -58,7 +58,7 @@ copyright:
     </head>
     <body>
 
-        <header>
+        <header id="header">
             <h1>
                 <a href="/">
                     {% for l in page.logo %}
@@ -70,31 +70,34 @@ copyright:
             </h1>
         </header>
 
-        <!-- Top Menu -->
-        <nav id="topmenu">
-            <ul class="lavaLamp">
-                {% for m in page.topmenu %}
-                <li><a href="{{ m.url }}">{{ m.id }}</a></li>
-                {% endfor %}
-            </ul>
-        </nav>
-
-        <!-- Main content area -->
-        <section id="content">
-            <!-- Left Sidebar Menu -->
-            <nav id="leftmenu">
-                <!-- <header><h3></h3></header> -->
-                <ul>
-                    {% for m in page.leftmenu %}
+        <div class="idented">
+            <!-- Top Menu -->
+            <nav id="topmenu">
+                <ul class="lavaLamp">
+                    {% for m in page.topmenu %}
                     <li><a href="{{ m.url }}">{{ m.id }}</a></li>
                     {% endfor %}
                 </ul>
             </nav>
-            <!-- Content -->
-            <section id="main">
-                {{ content }}
+
+            <!-- Main content area -->
+            <section id="content">
+                <!-- Left Sidebar Menu -->
+                <nav id="leftmenu">
+                    <!-- <header><h3></h3></header> -->
+                    <ul>
+                        {% for m in page.leftmenu %}
+                        <li><a href="{{ m.url }}">{{ m.id }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+                <!-- Content -->
+                <section id="main">
+                    {{ content }}
+                </section>
             </section>
-        </section>
+
+        </div>
 
         <!-- Footer -->
         <footer>
@@ -102,6 +105,8 @@ copyright:
                 {% for c in page.copyright %}
                 <p class="copyright">Copyright &copy; {{ c.page }} {{ c.year }} <a href="{{ c.url }}">{{ c.owner }}</a></p>
                 {% endfor %}
+            </section>
+            <section id="road">
             </section>
         </footer>
 
