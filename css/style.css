@@ -40,19 +40,20 @@ div.idented {
     background: url(../img/header.png) repeat-x;
     height: 150px;
 }
-#header h1,
-#header h1 a,
-#header h1 a figure {
+#header * {
     margin: 0;
     padding: 0;
     left:0;
     top:0;
 }
+#header img {
+    display: none;
+}
 
 .lavaLamp {
     position: relative;
     overflow: hidden;
-	background: url("../img/topmenu/menu_bg_road.png") repeat;
+    background: url("../img/topmenu/menu_bg_road.png") repeat;
     padding: 6px;
 
     border-radius : 10px;
