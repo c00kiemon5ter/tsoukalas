@@ -17,7 +17,7 @@ body {
 }
 
 #main-box {
-    height: 1024px;
+    height: 900px;
 	background: #c1dfdd url('../img/testDrive/welc03.gif') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
