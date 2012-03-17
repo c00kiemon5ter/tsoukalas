@@ -1,6 +1,13 @@
+{
+    padding: 0;
+    margin: 0;
+}
+
 body {
     background: #c1dfdd;
 	height: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 #menu {
