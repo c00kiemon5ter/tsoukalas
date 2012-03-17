@@ -268,7 +268,8 @@ img {
 }
 
 #image-container-res {
-	max-height: 20%;
+	min-height: 240px;
+	max-height: 150px;
 }
 
 #img-res {
