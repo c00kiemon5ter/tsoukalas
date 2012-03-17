@@ -48,7 +48,7 @@ body {
 }
 
 #image-container {
-	min-height: 30%;
+	min-height: 326px;
 	max-height: 150px;
 	padding: 0 30px 10% 0;
 }
