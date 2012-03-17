@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html, body {
+    height: 100%; /* needed for the sticky footer */
+}
+
 body {
     font: 13px/22px Helvetica, Arial, sans-serif;
     background: #BED7F7 url("../img/bg.png") repeat bottom left;
@@ -31,8 +35,14 @@ section, article, p {
     padding: 10px 0;
 }
 
-div.idented {
-    margin: 10px auto;
+#wrap {
+    min-height: 100%;
+}
+
+#idented {
+    overflow: auto;        /* needed for the sticky footer */
+    padding-bottom: 186px; /* needed for the sticky footer */
+    margin: 0 auto;
     width: 940px;
 }
 
@@ -63,7 +73,6 @@ div.idented {
     -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
     -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
 }
-
 .lavaLamp li { /* flow horizantally */
     float: left;
     list-style-type: none;
@@ -97,7 +106,6 @@ div.idented {
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
 }
-
 .lavaLamp li:hover {  /* background fading shadow */
     border-radius: 8px;
     -webkit-border-radius: 8px;
@@ -127,19 +135,8 @@ div.idented {
     color: #fff;
 }
 
-#content {
+#middle {
     display: table;
-}
-
-#intro header figure {
-    background-size: 100%;
-    -webkit-background-size: 100%;
-    -o-background-size: 100%;
-    -khtml-background-size: 100%;
-
-    border-radius: 22px;
-    -moz-border-radius: 22px;
-    -webkit-border-radius: 22px;
 }
 
 #leftmenu {
@@ -171,14 +168,25 @@ div.idented {
     color: whitesmoke;
 }
 
-#main {
+#content {
     display: table-cell;
     width: 670px;
     padding-left: 22px;
 }
 
-#main article > p {
+#content article > p {
     text-align: justify;
+}
+
+#intro header figure {
+    background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    -khtml-background-size: 100%;
+
+    border-radius: 22px;
+    -moz-border-radius: 22px;
+    -webkit-border-radius: 22px;
 }
 
 #startpage header {
@@ -186,6 +194,9 @@ div.idented {
 }
 
 footer {
+    position: relative; /* needed for the sticky footer */
+    margin-top: -186px; /* needed for the sticky footer */
+    clear: both;        /* needed for the sticky footer */
     display: table;
     left: 0;
     width: 100%;

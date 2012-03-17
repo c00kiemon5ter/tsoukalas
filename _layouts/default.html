@@ -59,45 +59,46 @@ copyright:
     </head>
     <body>
 
-        <header id="header">
-            <h1>
-                <a href="/">
-                    {% for l in page.logo %}
-                    <figure id="logo">
-                        <img class="logo" src="{{ l.img }}" alt="{{ l.alt }}"/>
-                    </figure>
-                    {% endfor %}
-                </a>
-            </h1>
-        </header>
+        <div id="wrap">
+            <header id="header">
+                <h1>
+                    <a href="/">
+                        {% for l in page.logo %}
+                        <figure id="logo">
+                            <img class="logo" src="{{ l.img }}" alt="{{ l.alt }}"/>
+                        </figure>
+                        {% endfor %}
+                    </a>
+                </h1>
+            </header>
 
-        <div class="idented">
-            <!-- Top Menu -->
-            <nav id="topmenu">
-                <ul class="lavaLamp">
-                    {% for m in page.topmenu %}
-                    <li><a href="{{ m.url }}">{{ m.id }}</a></li>
-                    {% endfor %}
-                </ul>
-            </nav>
-
-            <!-- Main content area -->
-            <section id="content">
-                <!-- Left Sidebar Menu -->
-                <nav id="leftmenu">
-                    <!-- <header><h3></h3></header> -->
-                    <ul>
-                        {% for m in page.leftmenu %}
+            <div id="idented">
+                <!-- Top Menu -->
+                <nav id="topmenu">
+                    <ul class="lavaLamp">
+                        {% for m in page.topmenu %}
                         <li><a href="{{ m.url }}">{{ m.id }}</a></li>
                         {% endfor %}
                     </ul>
                 </nav>
-                <!-- Content -->
-                <section id="main">
-                    {{ content }}
-                </section>
-            </section>
 
+                <!-- middle space - the main area -->
+                <section id="middle">
+                    <!-- Left Sidebar Menu -->
+                    <nav id="leftmenu">
+                        <!-- <header><h3></h3></header> -->
+                        <ul>
+                            {% for m in page.leftmenu %}
+                            <li><a href="{{ m.url }}">{{ m.id }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </nav>
+                    <!-- Main Content -->
+                    <section id="content">
+                        {{ content }}
+                    </section>
+                </section>
+            </div>
         </div>
 
         <!-- Footer -->
