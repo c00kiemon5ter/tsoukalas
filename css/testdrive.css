@@ -1,5 +1,10 @@
 body {
-	background-color: #c1dfdd; /* c1dfdd 99CCCC */
+	background: #c1dfdd url('../img/testDrive/welc03.gif') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100%;
 }
 
 #menu {
@@ -145,15 +150,6 @@ tr:hover {
 }
 
 /* MAIN PAGE */
-
-#main-box {
-	background: url('../img/testDrive/welc03.gif') no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	height: 100%;
-}
 
 #main-left {
 	display: inline;
