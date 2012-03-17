@@ -158,7 +158,7 @@ tr:hover {
 #main-left {
 	display: inline;
 	width: 25%;
-	float: left;	
+	float: left;
 }
 
 #main-center {
@@ -283,7 +283,7 @@ img {
 .cboxPhoto{float:left; margin:auto; border:0; display:block;}
 .cboxIframe{width:100%; height:100%; display:block; border:0;}
 
-/* 
+/*
     User Style:
     Change the following styles to modify the appearance of ColorBox.  They are
     ordered & tabbed in a way that represents the nesting of the generated HTML.
@@ -311,14 +311,13 @@ img {
         .cboxSlideshow_off #cboxSlideshow{background-position:-100px 0px; right:44px;}
         .cboxSlideshow_off #cboxSlideshow:hover{background-position:-75px -25px;}
 
-#footer {
+footer {
 	width: 100%;
 	text-align: center;
 	position: fixed;
 	bottom: 1%;
 }
-
-#footer a {
+footer a {
 	color: #541F1D;
 	text-decoration: none
 }
