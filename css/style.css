@@ -227,9 +227,14 @@ footer #copyright {
     display: table-cell;
     width: 50%;
     color: whitesmoke;
+    font-weight: bold;
     text-align: center;
     margin: 0 auto;
     padding-top: 60px;
+}
+footer #copyright a {
+    color: #541f1d;
+    text-decoration: none;
 }
 footer #road {
     display: table-cell;

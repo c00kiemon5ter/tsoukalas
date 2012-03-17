@@ -1,11 +1,12 @@
 ---
 desc: Σχολή Οδηγών - Πάνος Τσουκαλάς
 keywords: drive license σχολή οδηγών τσουκαλάς παναγιώτης πάνος αυτοκίνητο δίπλωμα
-author: www.webwizards.gr
+author: webwizards.gr
+author-url: http://www.webwizards.gr
 favico: favicon.ico
 css: css/style.css
 logo:
-    - img: img/logo.png
+    - url: img/logo.png
       alt: Σχολή Οδηγών Τσουκαλάς
 topmenu:
     - id:  Αρχική
@@ -65,7 +66,7 @@ copyright:
                     <a href="/">
                         {% for l in page.logo %}
                         <figure id="logo">
-                            <img class="logo" src="{{ l.img }}" alt="{{ l.alt }}"/>
+                            <img class="logo" src="{{ l.url }}" alt="{{ l.alt }}"/>
                         </figure>
                         {% endfor %}
                     </a>
@@ -115,7 +116,7 @@ copyright:
         <footer>
             <section id="copyright">
                 {% for c in page.copyright %}
-                <p class="copyright">Copyright &copy; {{ c.page }} {{ c.year }} <a href="{{ c.url }}">{{ c.owner }}</a></p>
+                <p class="copyright">Copyright &copy; <a href="/">{{ c.page }}</a> {{ c.year }} by <a href="{{ page.author-url }}">{{ page.author }}</a></p>
                 {% endfor %}
             </section>
             <section id="road">
