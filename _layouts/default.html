@@ -78,9 +78,11 @@ copyright:
                     <aside>
                         <!-- Logo stands here -->
                         <figure id="logo">
-                            {% for l in page.logo %}
-                            <img src="{{ l.url }}" alt="{{ l.alt }}" />
-                            {% endfor %}
+                            <a href="/">
+                                {% for l in page.logo %}
+                                <img src="{{ l.url }}" alt="{{ l.alt }}" />
+                                {% endfor %}
+                            </a>
                         </figure>
 
                         <!-- Left Sidebar Menu -->
