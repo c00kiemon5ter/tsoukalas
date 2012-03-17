@@ -1,9 +1,5 @@
 body {
-	background: #c1dfdd url('../img/testDrive/welc03.gif') no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+    background: #c1dfdd;
 	height: 100%;
 }
 
@@ -11,6 +7,15 @@ body {
 	display: inline;
 	float:right;
 	width: 35%;
+}
+
+#main-box {
+    height: 1024px;
+	background: #c1dfdd url('../img/testDrive/welc03.gif') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 #questions {
