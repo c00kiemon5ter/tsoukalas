@@ -50,15 +50,6 @@ section, article, p {
     background: url(../img/header.png) repeat-x;
     height: 150px;
 }
-#header * {
-    margin: 0;
-    padding: 0;
-    left:0;
-    top:0;
-}
-#header img {
-    display: none;
-}
 
 .lavaLamp {
     position: relative;

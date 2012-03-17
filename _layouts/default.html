@@ -61,17 +61,7 @@ copyright:
     <body>
 
         <div id="wrap">
-            <header id="header">
-                <h1>
-                    <a href="/">
-                        {% for l in page.logo %}
-                        <figure id="logo">
-                            <img class="logo" src="{{ l.url }}" alt="{{ l.alt }}"/>
-                        </figure>
-                        {% endfor %}
-                    </a>
-                </h1>
-            </header>
+            <header id="header"></header>
 
             <div id="idented">
                 <!-- Top Menu -->
@@ -89,7 +79,7 @@ copyright:
                         <!-- Logo stands here -->
                         <figure id="logo">
                             {% for l in page.logo %}
-                            <img src="{{ l.img }}" alt="{{ l.alt }}" />
+                            <img src="{{ l.url }}" alt="{{ l.alt }}" />
                             {% endfor %}
                         </figure>
 
