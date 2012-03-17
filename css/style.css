@@ -204,8 +204,25 @@ section, article, p {
     -webkit-border-radius: 22px;
 }
 
-#startpage header {
-    display: none;
+#startpage span {
+    font-weight: bold;
+    font-size: smaller;
+}
+.clrred {
+    color: red;
+}
+.clrgreen {
+    color: green;
+}
+.clrblue {
+    color: blue;
+}
+.clryellow {
+    color: orange;
+}
+
+#content p.sig {
+    text-align: right;
 }
 
 p.map {
