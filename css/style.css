@@ -189,6 +189,10 @@ section, article, p {
     text-align: justify;
 }
 
+#content p {
+    text-align: center;
+}
+
 #intro header figure {
     background-size: 100%;
     -webkit-background-size: 100%;
@@ -202,6 +206,13 @@ section, article, p {
 
 #startpage header {
     display: none;
+}
+
+p.map {
+    font-size: small;
+    font-style: italic;
+    text-align: center;
+    margin-top: 0;
 }
 
 footer {
