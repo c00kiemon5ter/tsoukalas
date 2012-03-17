@@ -84,15 +84,25 @@ copyright:
 
                 <!-- middle space - the main area -->
                 <section id="middle">
-                    <!-- Left Sidebar Menu -->
-                    <nav id="leftmenu">
-                        <!-- <header><h3></h3></header> -->
-                        <ul>
-                            {% for m in page.leftmenu %}
-                            <li><a href="{{ m.url }}">{{ m.id }}</a></li>
+                    <aside>
+                        <!-- Logo stands here -->
+                        <figure id="logo">
+                            {% for l in page.logo %}
+                            <img src="{{ l.img }}" alt="{{ l.alt }}" />
                             {% endfor %}
-                        </ul>
-                    </nav>
+                        </figure>
+
+                        <!-- Left Sidebar Menu -->
+                        <nav id="leftmenu">
+                            <!-- <header><h3></h3></header> -->
+                            <ul>
+                                {% for m in page.leftmenu %}
+                                <li><a href="{{ m.url }}">{{ m.id }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </nav>
+                    </aside>
+
                     <!-- Main Content -->
                     <section id="content">
                         {{ content }}
