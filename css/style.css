@@ -28,7 +28,7 @@ header, footer, nav, article {
 }
 
 section, article, p {
-    padding: 22px 0;
+    padding: 10px 0;
 }
 
 div.idented {
@@ -142,10 +142,6 @@ div.idented {
     -webkit-border-radius: 22px;
 }
 
-article > p {
-    text-align: justify;
-}
-
 #leftmenu {
     display: table-cell;
     width: 250px;
@@ -179,6 +175,14 @@ article > p {
     display: table-cell;
     width: 670px;
     padding-left: 22px;
+}
+
+#main article > p {
+    text-align: justify;
+}
+
+#startpage header {
+    display: none;
 }
 
 footer {
