@@ -100,7 +100,20 @@ function nextQuestion() {
 }
 
 function enableApprove(evt) {
-	approve.style.backgroundImage = 'url(\'../img/testDrive/apantisi.gif\')';	
+	switch(language) {
+		case '1':
+		approve.style.backgroundImage = 'url(\'../img/testDrive/apantisi.gif\')';
+		break;
+		case '2':
+		approve.style.backgroundImage = 'url(\'../img/testDrive/apantisi_en.gif\')';
+		break;
+		case '3':
+		approve.style.backgroundImage = 'url(\'../img/testDrive/apantisi_ru.gif\')';
+		break;
+		case '4':
+		approve.style.backgroundImage = 'url(\'../img/testDrive/apantisi_al.gif\')';
+		break;
+	}
 	approve.addEventListener('click',approveAnswer,false);
 	useranswer = evt.target.id;
 }
@@ -150,7 +163,21 @@ function showResults() {
 		newHTML += 'ΠΕΡΑΣΕ';
 	}
 	
+	
+	switch(language) {
+	case '1':
 	newHTML += '<img class="menuimg" src="../img/testDrive/arhikh.gif" id="home-res" alt="home" />';
+	break;
+	case '2':
+	newHTML += '<img class="menuimg" src="../img/testDrive/arhikh_en.gif" id="home-res" alt="home" />';
+	break;
+	case '3':
+	newHTML += '<img class="menuimg" src="../img/testDrive/arhikh_ru.gif" id="home-res" alt="home" />';
+	break;
+	case '4':
+	newHTML += '<img class="menuimg" src="../img/testDrive/arhikh_al.gif" id="home-res" alt="home" />';
+	break;
+}
 	
 	replaceHtml(container, newHTML);
 	
@@ -240,6 +267,18 @@ showQuestion();
 
 nextbut = document.getElementById('next');
 nextbut.addEventListener('click',nextQuestion,false);
+
+switch(language) {
+	case '2':
+	nextbut.style.backgroundImage = 'url(\'../img/testDrive/epomeni3_en.gif\')';
+	break;
+	case '3':
+	nextbut.style.backgroundImage = 'url(\'../img/testDrive/epomeni3_ru.gif\')';
+	break;
+	case '4':
+	nextbut.style.backgroundImage = 'url(\'../img/testDrive/epomeni3_al.gif\')';
+	break;
+}
 
 timer();
 
