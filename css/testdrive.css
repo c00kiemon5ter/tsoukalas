@@ -5,284 +5,284 @@
 
 body {
     background: #c1dfdd;
-	height: 100%;
+    height: 100%;
     padding: 0;
     margin: 0;
 }
 
 #menu {
-	display: inline;
-	float:right;
-	width: 35%;
+    display: inline;
+    float:right;
+    width: 35%;
 }
 
 #main-box {
     height: 900px;
-	background: #c1dfdd url('../img/testDrive/welc03.gif') no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+    background: #c1dfdd url('../img/testDrive/welc03.gif') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #questions {
-	width: 60%;
+    width: 60%;
 }
 
 #title {
-	display: block;
-	margin-top: 30px;
-	font-size: 2.5em;
-	text-align: center;
+    display: block;
+    margin-top: 30px;
+    font-size: 2.5em;
+    text-align: center;
 }
 
 #question {
-	padding-top: 30px;
-	font-size: 1.3em;
-	font-weight: bold;
-	min-height: 4em;
+    padding-top: 30px;
+    font-size: 1.3em;
+    font-weight: bold;
+    min-height: 4em;
 }
 
 #image-box {
-	display: inline;
+    display: inline;
 }
 
 #image-container {
-	min-height: 326px;
-	max-height: 150px;
-	padding: 0 30px 10% 0;
+    min-height: 326px;
+    max-height: 150px;
+    padding: 0 30px 10% 0;
 }
 
 #image {
-	max-height: 50%;
-	display: block;
-	-moz-box-shadow: 3px 3px 4px #000;
-	-webkit-box-shadow: 3px 3px 4px #000;
-	box-shadow: 3px 3px 4px #000;
-	/* For IE 8 */
-	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
-	/* For IE 5.5 - 7 */
-	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+    max-height: 50%;
+    display: block;
+    -moz-box-shadow: 3px 3px 4px #000;
+    -webkit-box-shadow: 3px 3px 4px #000;
+    box-shadow: 3px 3px 4px #000;
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
 }
 
 #choices {
-	padding-top: 1%;
+    padding-top: 1%;
 }
 
 .choice {
-	width: 100%;
-	height: 6em;
-	margin: 4% 0;
-	resize:none;
-	cursor:pointer;
-	font-size: 1.2em;
+    width: 100%;
+    height: 6em;
+    margin: 4% 0;
+    resize:none;
+    cursor:pointer;
+    font-size: 1.2em;
 }
 
 a:target > textarea.choice {
-	background-color: #FFFF99;
+    background-color: #FFFF99;
 }
 
 #time-box {
-	float: right;
-	text-align: center;
-	font-size: 1.4em;
-	color: #0F5252;
+    float: right;
+    text-align: center;
+    font-size: 1.4em;
+    color: #0F5252;
 }
 
 #time-progress {
-	background-color: #B1E6E6;
-	margin: 20px 0;
-	border: 1px solid black;
-	-moz-box-shadow: 3px 3px 4px #000;
-	-webkit-box-shadow: 3px 3px 4px #000;
-	box-shadow: 3px 3px 4px #000;
-	/* For IE 8 */
-	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
-	/* For IE 5.5 - 7 */
-	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+    background-color: #B1E6E6;
+    margin: 20px 0;
+    border: 1px solid black;
+    -moz-box-shadow: 3px 3px 4px #000;
+    -webkit-box-shadow: 3px 3px 4px #000;
+    box-shadow: 3px 3px 4px #000;
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
 }
 
 #buttons {
-	float: right;
-	width: 182px;
-	margin: 20px 50px;
+    float: right;
+    width: 182px;
+    margin: 20px 50px;
 }
 
 button {
-	min-height: 111px;
-	-moz-box-shadow: 3px 3px 4px #000;
-	-webkit-box-shadow: 3px 3px 4px #000;
-	box-shadow: 3px 3px 4px #000;
-	/* For IE 8 */
-	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
-	/* For IE 5.5 - 7 */
-	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+    min-height: 111px;
+    -moz-box-shadow: 3px 3px 4px #000;
+    -webkit-box-shadow: 3px 3px 4px #000;
+    box-shadow: 3px 3px 4px #000;
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
 }
 
 #confirm {
-	background-image: url('../img/testDrive/apantdis.gif');
-	width: 181px;
-	height: 111px;
-	margin-bottom: 50px;
+    background-image: url('../img/testDrive/apantdis.gif');
+    width: 181px;
+    height: 111px;
+    margin-bottom: 50px;
 }
 
 #next {
-	background-image: url('../img/testDrive/epomeni3.gif');
-	width: 181px;
-	height: 111px;
+    background-image: url('../img/testDrive/epomeni3.gif');
+    width: 181px;
+    height: 111px;
 }
 
 #results {
-	display:inline;
-	float:left;
-	width:40%;
-	margin-left: 30px;
+    display:inline;
+    float:left;
+    width:40%;
+    margin-left: 30px;
 }
 
 #description {
-	display:inline;
-	float:right;
-	width:50%;
+    display:inline;
+    float:right;
+    width:50%;
 }
 
 #result {
-	padding-top: 5%;
-	font-size: 1.4em;
+    padding-top: 5%;
+    font-size: 1.4em;
 }
 
 #results-table {
-	background-color: #999999;
-	border-collapse:collapse;
+    background-color: #999999;
+    border-collapse:collapse;
 }
 
 table, td, th {
-	border: solid 1px black;
+    border: solid 1px black;
 }
 
 tr:hover {
-	background-color: #99CCCC;
+    background-color: #99CCCC;
 }
 
 /* MAIN PAGE */
 
 #main-left {
-	display: inline;
-	width: 25%;
-	float: left;
+    display: inline;
+    width: 25%;
+    float: left;
 }
 
 #main-center {
-	display: inline;
-	width: 50%;
+    display: inline;
+    width: 50%;
 }
 
 #main-right {
-	display: inline;
-	width: 25%;
-	float: right;
+    display: inline;
+    width: 25%;
+    float: right;
 }
 
 .menuimg {
-	display: block;
-	max-width: 140px;
-	min-width: 70px;
-	width: 50%;
+    display: block;
+    max-width: 140px;
+    min-width: 70px;
+    width: 50%;
 }
 
 img {
-	min-width: 50%;
-	max-width: 80%;
+    min-width: 50%;
+    max-width: 80%;
 }
 
 .menuright {
-	padding: 33% 0 0 5px;
+    padding: 33% 0 0 5px;
 }
 
 .menuleft {
-	padding: 25% 0 0 50%;
+    padding: 25% 0 0 50%;
 }
 
 .white {
-	font-size: 1.5em;
-	color: white;
-	-moz-text-shadow: 3px 3px 4px #000;
-	-webkit-text-shadow: 3px 3px 4px #000;
-	text-shadow: 3px 3px 4px #000;
+    font-size: 1.5em;
+    color: white;
+    -moz-text-shadow: 3px 3px 4px #000;
+    -webkit-text-shadow: 3px 3px 4px #000;
+    text-shadow: 3px 3px 4px #000;
 }
 
 .gradient {
     background: -webkit-gradient(
-	  linear, 0 0, 100% 100%, from(#0F5252), to(#c1dfdd)
-	);
+    linear, 0 0, 100% 100%, from(#0F5252), to(#c1dfdd)
+    );
 
-	background: -moz-linear-gradient(
-	  top left, #0F5252, #c1dfdd
-	);
+    background: -moz-linear-gradient(
+    top left, #0F5252, #c1dfdd
+    );
 }
 
 .box {
-	padding-top: 5%;
-	min-height: 6.5em;
+    padding-top: 5%;
+    min-height: 6.5em;
 }
 
 .bluebox, .pinkbox {
-	border: solid 1px black;
-	min-height: 5.5em;
+    border: solid 1px black;
+    min-height: 5.5em;
 }
 
 .bluebox {
-	background-color: #99CCCC;
+    background-color: #99CCCC;
 }
 
 .pinkbox {
-	background-color: #FFCCCC;
+    background-color: #FFCCCC;
 }
 
 #fail {
-	color: red;
-	text-align: center;
-	font-size: 4em;
-	border: 10px solid red;
-	padding: 2%;
+    color: red;
+    text-align: center;
+    font-size: 4em;
+    border: 10px solid red;
+    padding: 2%;
 }
 
 #pass {
-	color: green;
-	text-align: center;
-	font-size: 4em;
-	border: 10px solid green;
-	padding: 2%;
+    color: green;
+    text-align: center;
+    font-size: 4em;
+    border: 10px solid green;
+    padding: 2%;
 }
 
 #home-res {
-	position: absolute;
-	right:0;
-	top:0;
+    position: absolute;
+    right:0;
+    top:0;
 }
 
 #resbox {
-	padding-top: 200px;
+    padding-top: 200px;
 }
 
 #image-box-res {
-	min-height: 25%;
-	max-height: 25%;
+    min-height: 25%;
+    max-height: 25%;
 }
 
 #image-container-res {
-	min-height: 240px;
-	max-height: 150px;
+    min-height: 240px;
+    max-height: 150px;
 }
 
 #img-res {
-	height: 24%;
-	width: 24%;
+    height: 24%;
+    width: 24%;
 }
 
 /*
-    ColorBox Core Style:
-    The following CSS is consistent between example themes and should not be altered.
-*/
+ColorBox Core Style:
+The following CSS is consistent between example themes and should not be altered.
+ */
 #colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
 #cboxOverlay{position:fixed; width:100%; height:100%;}
 #cboxMiddleLeft, #cboxBottomLeft{clear:left;}
@@ -295,40 +295,41 @@ img {
 .cboxIframe{width:100%; height:100%; display:block; border:0;}
 
 /*
-    User Style:
-    Change the following styles to modify the appearance of ColorBox.  They are
-    ordered & tabbed in a way that represents the nesting of the generated HTML.
-*/
+User Style:
+Change the following styles to modify the appearance of ColorBox.  They are
+ordered & tabbed in a way that represents the nesting of the generated HTML.
+ */
 #cboxOverlay{background:#fff;}
 #colorbox{}
-    #cboxContent{margin-top:32px; overflow:visible;}
-        .cboxIframe{background:#fff;}
-        #cboxError{padding:50px; border:1px solid #ccc;}
-        #cboxLoadedContent{background:#000; padding:1px;}
-        #cboxLoadingGraphic{background:url(../img/colorbox/loading.gif) no-repeat center center;}
-        #cboxLoadingOverlay{background:#000;}
-        #cboxTitle{position:absolute; top:-22px; left:0; color:#000;}
-        #cboxCurrent{position:absolute; top:-22px; right:205px; text-indent:-9999px;}
-        #cboxSlideshow, #cboxPrevious, #cboxNext, #cboxClose{text-indent:-9999px; width:20px; height:20px; position:absolute; top:-20px; background:url(../img/colorbox/controls.png) no-repeat 0 0;}
-        #cboxPrevious{background-position:0px 0px; right:44px;}
-        #cboxPrevious:hover{background-position:0px -25px;}
-        #cboxNext{background-position:-25px 0px; right:22px;}
-        #cboxNext:hover{background-position:-25px -25px;}
-        #cboxClose{background-position:-50px 0px; right:0;}
-        #cboxClose:hover{background-position:-50px -25px;}
-        .cboxSlideshow_on #cboxPrevious, .cboxSlideshow_off #cboxPrevious{right:66px;}
-        .cboxSlideshow_on #cboxSlideshow{background-position:-75px -25px; right:44px;}
-        .cboxSlideshow_on #cboxSlideshow:hover{background-position:-100px -25px;}
-        .cboxSlideshow_off #cboxSlideshow{background-position:-100px 0px; right:44px;}
-        .cboxSlideshow_off #cboxSlideshow:hover{background-position:-75px -25px;}
+#cboxContent{margin-top:32px; overflow:visible;}
+.cboxIframe{background:#fff;}
+#cboxError{padding:50px; border:1px solid #ccc;}
+#cboxLoadedContent{background:#000; padding:1px;}
+#cboxLoadingGraphic{background:url(../img/colorbox/loading.gif) no-repeat center center;}
+#cboxLoadingOverlay{background:#000;}
+#cboxTitle{position:absolute; top:-22px; left:0; color:#000;}
+#cboxCurrent{position:absolute; top:-22px; right:205px; text-indent:-9999px;}
+#cboxSlideshow, #cboxPrevious, #cboxNext, #cboxClose{text-indent:-9999px; width:20px; height:20px; position:absolute; top:-20px; background:url(../img/colorbox/controls.png) no-repeat 0 0;}
+#cboxPrevious{background-position:0px 0px; right:44px;}
+#cboxPrevious:hover{background-position:0px -25px;}
+#cboxNext{background-position:-25px 0px; right:22px;}
+#cboxNext:hover{background-position:-25px -25px;}
+#cboxClose{background-position:-50px 0px; right:0;}
+#cboxClose:hover{background-position:-50px -25px;}
+.cboxSlideshow_on #cboxPrevious, .cboxSlideshow_off #cboxPrevious{right:66px;}
+.cboxSlideshow_on #cboxSlideshow{background-position:-75px -25px; right:44px;}
+.cboxSlideshow_on #cboxSlideshow:hover{background-position:-100px -25px;}
+.cboxSlideshow_off #cboxSlideshow{background-position:-100px 0px; right:44px;}
+.cboxSlideshow_off #cboxSlideshow:hover{background-position:-75px -25px;}
 
 footer {
-	width: 100%;
-	text-align: center;
-	position: fixed;
-	bottom: 1%;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 1%;
+    font-size: 18px;
 }
 footer a {
-	color: #541F1D;
-	text-decoration: none
+    color: #541F1D;
+    text-decoration: none
 }
