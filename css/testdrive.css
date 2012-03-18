@@ -5,24 +5,52 @@
 
 body {
     background: #c1dfdd;
+    margin: 0 auto;
+    text-align: center;
+    width: 940px;
+    height: 760px;
+}
+
+#testdrive {
+    width: 100%;
     height: 100%;
-    padding: 0;
-    margin: 0;
+}
+
+#main-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #c1dfdd url('../img/testDrive/welc03.gif') no-repeat center center;
+}
+#main-left {
+    float: left;
+    width: 40%;
+}
+#main-right {
+    float: right;
+    width: 40%;
+}
+
+footer {
+    background: url(../img/logo.png) no-repeat center top;
+    height: 110px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 18px;
+    margin-top: 30px;
+}
+footer p {
+    padding: 90px 0 5px 0;
+}
+footer a {
+    color: #541F1D;
+    text-decoration: none
 }
 
 #menu {
     display: inline;
-    float:right;
+    float: right;
     width: 35%;
-}
-
-#main-box {
-    height: 900px;
-    background: #c1dfdd url('../img/testDrive/welc03.gif') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
 #questions {
@@ -133,15 +161,15 @@ button {
 }
 
 #results {
-    display:inline;
-    float:left;
-    width:40%;
-    margin-left: 30px;
+    display: inline;
+    float: left;
+    width: 40%;
+    margin: 30px;
 }
 
 #description {
     display:inline;
-    float:right;
+    float: right;
     width:50%;
 }
 
@@ -157,29 +185,11 @@ button {
 
 table, td, th {
     border: solid 1px black;
+    padding: 3px 10px;
 }
 
 tr:hover {
-    background-color: #99CCCC;
-}
-
-/* MAIN PAGE */
-
-#main-left {
-    display: inline;
-    width: 25%;
-    float: left;
-}
-
-#main-center {
-    display: inline;
-    width: 50%;
-}
-
-#main-right {
-    display: inline;
-    width: 25%;
-    float: right;
+    background-color: #9CC;
 }
 
 .menuimg {
@@ -241,7 +251,7 @@ img {
 #fail {
     color: red;
     text-align: center;
-    font-size: 4em;
+    font-size: 3em;
     border: 10px solid red;
     padding: 2%;
 }
@@ -255,9 +265,10 @@ img {
 }
 
 #home-res {
-    position: absolute;
-    right:0;
-    top:0;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    margin: 30px;
 }
 
 #resbox {
@@ -322,14 +333,3 @@ ordered & tabbed in a way that represents the nesting of the generated HTML.
 .cboxSlideshow_off #cboxSlideshow{background-position:-100px 0px; right:44px;}
 .cboxSlideshow_off #cboxSlideshow:hover{background-position:-75px -25px;}
 
-footer {
-    width: 100%;
-    text-align: center;
-    position: fixed;
-    bottom: 1%;
-    font-size: 18px;
-}
-footer a {
-    color: #541F1D;
-    text-decoration: none
-}
