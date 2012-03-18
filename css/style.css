@@ -59,6 +59,7 @@ section, article, p {
     text-align: right;
     margin: 0 0 0 auto;
 }
+
 .weatherFeed {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 90%;
@@ -168,6 +169,21 @@ section, article, p {
     font-size: 14px;
     font-weight: bold;
     color: #fff;
+}
+
+#slogan {
+    float: left;
+    position: absolute;
+    top: 55px;
+    left: 50px;
+    margin: 5px;
+    padding-left: 25px;
+    width: 13em;
+    font-style: italic;
+    font-size: small;
+    text-align: justify;
+    background: url("../img/quote.gif") no-repeat top left,
+                url("../img/quote_rev.gif") no-repeat bottom right;
 }
 
 #middle {
