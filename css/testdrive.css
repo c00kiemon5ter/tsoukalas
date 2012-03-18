@@ -74,6 +74,7 @@ body {
 	height: 6em;
 	margin: 4% 0;
 	resize:none;
+	cursor:pointer;
 }
 
 a:target > textarea.choice {
