@@ -3,13 +3,13 @@ title: Page not found
 layout: default
 ---
 
-Page not found
---------------
 
-![page not found](img/signs/stop.png)
 
-The requested page was not found on the server.
+{:.404img}
+![page not found](img/404.png)
 
-← Go to the [homepage](/)
+{:.404p}
+Η σελίδα που ψάχνετε δε βρέθηκε.
 
+Κάντε όπισθεν στην [αρχική](/)
 
