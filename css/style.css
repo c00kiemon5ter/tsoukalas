@@ -50,6 +50,11 @@ section, article, p {
     background: url(../img/header.png) repeat-x;
     height: 150px;
 }
+#header .jclock {
+    background: orange;
+    color: white;
+    text-align: right;
+}
 
 .lavaLamp {
     position: relative;
