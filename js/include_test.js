@@ -27,21 +27,21 @@ json = '../js/test/questions_';
 switch(category) {
 	case '1':
 		json += 'car_';
-		var testtime = originaltesttime = 30 * 60; // 30 min
+		var testtime = originaltesttime = 35 * 60; // 30 min
 		var maxquestions = 20;
 		break;
 	case '2':
-		var testtime = originaltesttime = 20; // seconds
+		var testtime = originaltesttime = 15 * 60; // 15 min
 		var maxquestions = 10;
 		json += 'moto_';
 		break;
 	case '3':
-		var testtime = originaltesttime = 20; // seconds
+		var testtime = originaltesttime = 15 * 60; // 15 min
 		var maxquestions = 10;
 		json += 'truck_';
 		break;
 	case '4':
-		var testtime = originaltesttime = 20; // seconds
+		var testtime = originaltesttime = 15 * 60; // 15 min
 		var maxquestions = 10;
 		json += 'bus_';
 		break;
