@@ -252,6 +252,10 @@ section, article, p {
 .clrgreen  { color: green;  }
 .clrblue   { color: blue;   }
 .clryellow { color: orange; }
+a.clrblue {
+    font-weight: bold;
+    text-decoration: none;
+}
 
 #content p.sig {
     text-align: right;
@@ -285,6 +289,12 @@ p.map {
     font-style: italic;
     text-align: center;
     margin-top: 0;
+}
+
+#testdrive {
+    background: url("../img/testdrive.png") no-repeat top center;
+    height: 335px;
+    width: 450px;
 }
 
 footer {
