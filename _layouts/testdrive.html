@@ -4,17 +4,17 @@ desc: Τσουκαλάς Παναγιώτης - Σχολή Οδηγών
 keywords: drive license σχολή οδηγών τσουκαλάς παναγιώτης πάνος αυτοκίνητο δίπλωμα
 author: webwizards.gr
 author-url: http://www.webwizards.gr
-favico: favicon.ico
+favico: ../favicon.ico
 css: ../css/testdrive.css
 jscripts:
-    - url: ../js/jquery.min.js
-    - url: ../js/jquery.colorbox-min.js
-    - url: ../js/results.js
+- url: ../js/jquery.min.js
+- url: ../js/jquery.colorbox-min.js
+- url: ../js/results.js
 copyright:
-    - page: tsoukalas.net
-      year: 2012
-      owner: webwizards
-      url: http://webwizards.gr
+- page: tsoukalas.net
+year: 2012
+owner: webwizards
+url: http://webwizards.gr
 ---
 <!doctype html>
 <html>
@@ -32,9 +32,12 @@ copyright:
         {% endfor %}
     </head>
     <body>
-        <section id="testdrive">
-            {{ content }}
-        </section>
+
+        <div id="wrap">
+            <section id="testdrive">
+                {{ content }}
+            </section>
+        </div>
 
         <!-- Footer -->
         <footer>
