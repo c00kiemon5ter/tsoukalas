@@ -160,6 +160,10 @@ button {
     height: 111px;
 }
 
+#next, #confirm {
+    cursor: pointer;
+}
+
 #results {
     display: inline;
     float: left;
@@ -205,11 +209,13 @@ img {
 }
 
 .menuright {
-    padding: 33% 0 0 5px;
+    margin: 33% 0 0 5px;
 }
-
 .menuleft {
-    padding: 25% 0 0 50%;
+    margin: 25% 0 0 50%;
+}
+.menuright, .menuleft {
+    cursor: pointer;
 }
 
 .white {
