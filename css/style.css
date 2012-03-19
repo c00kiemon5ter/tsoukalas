@@ -9,7 +9,7 @@ html, body {
 }
 
 body {
-    font: 13px/22px Helvetica, Arial, sans-serif;
+    font: 16px Helvetica, Arial, sans-serif;
     background: #BED7F7 url("../img/bg.png") repeat bottom left;
     margin: 0 auto;
     padding: 0;
@@ -279,7 +279,7 @@ a.clrblue {
     font-style: italic;
     font-weight: bold;
     text-align: center;
-    padding: 1.5em 2em;
+    padding: 1.5em 1em;
     background: url("../img/quote.gif") no-repeat top left,
                 url("../img/quote_rev.gif") no-repeat bottom right;
 }
