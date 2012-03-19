@@ -175,36 +175,25 @@ section, article, p {
     color: #fff;
 }
 
-#slogan {
-    float: left;
-    position: absolute;
-    top: 55px;
-    left: 50px;
-    margin: 5px;
-    padding-left: 25px;
-    width: 13em;
-    font-style: italic;
-    font-size: small;
-    text-align: justify;
-    background: url("../img/quote.gif") no-repeat top left,
-                url("../img/quote_rev.gif") no-repeat bottom right;
-}
-
 #middle {
     display: table;
+    width: 100%;
 }
 
 #middle aside {
     display: table-cell;
     margin: 0 auto;
+    width: 14em;
+    padding: 0;
 }
 
 #logo {
     display: table-row;
-    width: 35%;
+    width: 250px;
     text-align: center;
 }
 #logo img {
+    margin: 5px;
     border-radius : 12px;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
@@ -212,7 +201,6 @@ section, article, p {
 
 #leftmenu {
     display: table-row;
-    width: 35%;
 }
 #leftmenu ul {
     margin: 20px;
@@ -241,8 +229,7 @@ section, article, p {
 
 #content {
     display: table-cell;
-    width: 65%;
-    padding: 0 10px;
+    padding: 0 1em;
 }
 
 #banner {
@@ -257,36 +244,40 @@ section, article, p {
     text-align: center;
 }
 
-#intro header figure {
-    background-size: 100%;
-    -webkit-background-size: 100%;
-    -o-background-size: 100%;
-    -khtml-background-size: 100%;
-
-    border-radius: 22px;
-    -moz-border-radius: 22px;
-    -webkit-border-radius: 22px;
-}
-
 #startpage span {
     font-weight: bold;
     font-size: smaller;
 }
-.clrred {
-    color: red;
-}
-.clrgreen {
-    color: green;
-}
-.clrblue {
-    color: blue;
-}
-.clryellow {
-    color: orange;
-}
+.clrred    { color: red;    }
+.clrgreen  { color: green;  }
+.clrblue   { color: blue;   }
+.clryellow { color: orange; }
 
 #content p.sig {
     text-align: right;
+}
+
+#banner {
+    margin: 0;
+    padding: 0;
+}
+#banner img {
+    width: 424px;
+    padding-bottom: 2em;
+}
+
+#slogan {
+    display: table-cell;
+    width: 14em;
+}
+#slogan p {
+    font-size: small;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    padding: 1.5em 2em;
+    background: url("../img/quote.gif") no-repeat top left,
+                url("../img/quote_rev.gif") no-repeat bottom right;
 }
 
 p.map {
