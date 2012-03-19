@@ -54,6 +54,10 @@ section, article, p {
     background: orange;
     color: white;
     text-align: right;
+    float: right;
+    width: 280px;
+    border-radius: 0 0 0 22px;
+    margin-bottom: 10px;
 }
 #header #weather {
     text-align: right;
