@@ -1,13 +1,13 @@
 // read vars from url - http://www.boutell.com/newfaq/creating/scriptpass.html
 
 var query = window.location.search;
-// Skip the leading ?, which should always be there, 
+// Skip the leading ?, which should always be there,
 // but be careful anyway
 if (query.substring(0, 1) == '?') {
 	query = query.substring(1);
 }
 
-var data = query.split(','); 
+var data = query.split(',');
 for (i = 0; (i < data.length); i++) {
 	data[i] = unescape(data[i]);
 }
@@ -28,7 +28,7 @@ switch(category) {
 	case '1':
 		json += 'car_';
 		var testtime = originaltesttime = 35 * 60; // 30 min
-		var maxquestions = 20;
+		var maxquestions = 30;
 		break;
 	case '2':
 		var testtime = originaltesttime = 15 * 60; // 15 min
