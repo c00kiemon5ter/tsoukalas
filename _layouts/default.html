@@ -5,9 +5,6 @@ author: webwizards.gr
 author-url: http://www.webwizards.gr
 favico: favicon.ico
 css: css/style.css
-logo:
-    - url: img/logo.png
-      alt: Σχολή Οδηγών Τσουκαλάς
 topmenu:
     - id:  Αρχική
       url: index.html?0
@@ -83,13 +80,7 @@ copyright:
                 <section id="middle">
                     <aside>
                         <!-- Logo stands here -->
-                        <figure id="logo">
-                            <a href="/">
-                                {% for l in page.logo %}
-                                <img src="{{ l.url }}" alt="{{ l.alt }}" />
-                                {% endfor %}
-                            </a>
-                        </figure>
+                        <a href="/" id="logo">{{ page.desc }}</a>
 
                         <!-- Left Sidebar Menu -->
                         <nav id="leftmenu">

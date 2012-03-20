@@ -189,11 +189,11 @@ section, article, p {
 }
 
 #logo {
-    display: table-row;
+    display: block;
+    background: url("../img/logo.png") no-repeat center center;
     width: 250px;
-    text-align: center;
-}
-#logo img {
+    height: 84px;
+    text-indent: -9999px;
     margin: 5px;
     border-radius : 12px;
     -webkit-border-radius: 12px;
@@ -241,13 +241,16 @@ section, article, p {
     text-align: center;
 }
 
-#banner {
-    text-align: center;
-    margin: 0 0 3em;
-    padding: 0;
+#startpage header {
+    margin-bottom: 3em;
 }
-#banner img {
-    width: 424px;
+
+#banner {
+    display: block;
+    background: url("../img/banner.png") no-repeat center center;
+    background-size: 420px 116px;
+    text-indent: -9999px;
+    height: 118px;
 }
 
 #startpage span {
