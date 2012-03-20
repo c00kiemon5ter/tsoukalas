@@ -214,7 +214,7 @@ section, article, p {
 }
 #leftmenu ul li {
     list-style-type: none;
-    margin: 6px 0;
+    margin: 10px 0;
     overflow: hidden;
     text-align: center;
 }
