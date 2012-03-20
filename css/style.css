@@ -273,6 +273,7 @@ a.clrblue {
 #slogan {
     display: table-cell;
     width: 14em;
+    vertical-align: middle;
 }
 #slogan p {
     font-size: small;
