@@ -201,31 +201,31 @@ section, article, p {
 }
 
 #leftmenu {
-    display: table-row;
+    max-width: 250px;
 }
 #leftmenu ul {
-    margin: 20px;
+    margin: 5px;
     padding: 5px;
-    background: #79cbe3; /* FIXME visualize space */
-
-    border-radius : 12px;
+    background: #79cbe3;
+    background: #777;
+    border-radius: 12px;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
 }
 #leftmenu ul li {
     list-style-type: none;
-    margin: 10px;
-    padding: 10px;
-    border:2px solid #575757;
-    background: #646464; /* FIXME visualize space */
-
+    margin: 6px 0;
     overflow: hidden;
-    border-radius : 12px;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
+    text-align: center;
 }
 #leftmenu ul li a {
+    display: block;
+    background: url("../img/sign.png") no-repeat center right;
+    height: 50px;
+    padding: 8px 50px 12px 10px;
     color: whitesmoke;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 #content {
