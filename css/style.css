@@ -285,6 +285,16 @@ a.clrblue {
                 url("../img/quote_rev.gif") no-repeat bottom right;
 }
 
+code {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Courier New", "Lucida Console", Consolas, "DejaVu Sans Mono",
+         "Bitstream Vera Sans Mono", "Andale Mono", Monaco, Courier, monospace;
+}
+a code {
+    color: blue;
+}
+
 p.map {
     font-size: small;
     font-style: italic;
