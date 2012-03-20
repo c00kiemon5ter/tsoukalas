@@ -353,3 +353,9 @@ footer #road {
     background: url(../img/road.png) no-repeat right bottom;
 }
 
+.thumbnail {
+	width: 160px;
+	padding: 5px;
+	background: white;
+	border: 1px solid #BBB;
+}
