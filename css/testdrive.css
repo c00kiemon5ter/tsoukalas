@@ -90,7 +90,7 @@ footer a {
 }
 
 #image {
-    max-height: 50%;
+    max-height: 290px;
     display: block;
     -moz-box-shadow: 3px 3px 4px #000;
     -webkit-box-shadow: 3px 3px 4px #000;
