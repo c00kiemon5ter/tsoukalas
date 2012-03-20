@@ -231,6 +231,7 @@ section, article, p {
 #content {
     display: table-cell;
     padding: 0 1em;
+    vertical-align: middle;
 }
 
 #content article > p {
@@ -307,6 +308,19 @@ p.map {
     background: url("../img/testdrive.png") no-repeat top center;
     height: 335px;
     width: 450px;
+}
+
+#content #pnf header a {
+    display: block;
+    background: url("../img/404.png") no-repeat center center;
+    height: 110px;
+    text-indent: -9999px;
+}
+#content #pnf p {
+    text-align: center;
+}
+#content #pnf p a {
+    color: blue;
 }
 
 footer {
