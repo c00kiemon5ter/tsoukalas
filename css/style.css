@@ -283,6 +283,7 @@ a.clrblue {
     padding: 1.5em 1em;
     background: url("../img/quote.gif") no-repeat top left,
                 url("../img/quote_rev.gif") no-repeat bottom right;
+    color: #600;
 }
 
 code {
@@ -328,7 +329,7 @@ footer #copyright {
     padding-top: 60px;
 }
 footer #copyright a {
-    color: #541f1d;
+    color: #600;
     text-decoration: none;
 }
 footer #road {
