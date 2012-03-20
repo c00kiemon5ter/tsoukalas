@@ -3,8 +3,6 @@ title: Page not found
 layout: default
 ---
 
-
-
 {:.404img}
 ![page not found](img/404.png)
 

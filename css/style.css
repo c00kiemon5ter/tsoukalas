@@ -10,7 +10,7 @@ html, body {
 
 body {
     font: 16px Helvetica, Arial, sans-serif;
-    background: #BED7F7 url("../img/bg.png") repeat bottom left;
+    background: url("../img/bg.png") repeat bottom left;
     margin: 0 auto;
     padding: 0;
 }
@@ -233,16 +233,21 @@ section, article, p {
     padding: 0 1em;
 }
 
-#banner {
-    text-align: center;
-}
-
 #content article > p {
     text-align: justify;
 }
 
 #content p {
     text-align: center;
+}
+
+#banner {
+    text-align: center;
+    margin: 0 0 3em;
+    padding: 0;
+}
+#banner img {
+    width: 424px;
 }
 
 #startpage span {
@@ -258,17 +263,8 @@ a.clrblue {
     text-decoration: none;
 }
 
-#content p.sig {
+#startpage p.sig {
     text-align: right;
-}
-
-#banner {
-    margin: 0;
-    padding: 0;
-}
-#banner img {
-    width: 424px;
-    padding-bottom: 2em;
 }
 
 #slogan {
