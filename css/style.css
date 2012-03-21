@@ -232,9 +232,13 @@ section, article, p {
     text-decoration: none;
 }
 
-#licenses,
-#services {
+#licenses ul,
+#services ul {
     display: none;
+}
+#licenses a.greensign,
+#services a.greensign {
+    background: url("../img/greensign.png") no-repeat center right;
 }
 
 #content {

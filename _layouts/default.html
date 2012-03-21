@@ -20,10 +20,10 @@ leftmenu:
     - ttl: Manual Εκπαιδευτικά Οχήματα
       url: manualcar.html
     - ttl: Διπλώματα Οδήγησης
-      url: licenses.html
+      url: "#menu"
       id: licenses
     - ttl: Υπηρεσίες
-      url: services.html
+      url: "#menu"
       id: services
     - ttl: Μετεκπαιδεύσεις
       url: metatrain.html
@@ -83,6 +83,10 @@ copyright:
         <script type="text/javascript">$(function(){ $(".lavaLamp").lavaLamp({ fx: "backout", speed: 700 }); });</script>
         <script type="text/javascript">$(function(){ $('.jclock').jclock({ format:'%a %d %b %H:%M:%S' }); });</script>
         <script type="text/javascript">$(function(){ $('#weather').weatherfeed(['GRXX0004']); })</script>
+        <script type="text/javascript">$(function(){ $('#licenses').click(function(){
+            $('#licenses ul').slideToggle(function(){ $('#licenses a:first').toggleClass('greensign'); }); }); })</script>
+        <script type="text/javascript">$(function(){ $('#services').click(function(){
+            $('#services ul').slideToggle(function(){ $('#services a:first').toggleClass('greensign'); }); }); })</script>
     </head>
     <body>
 
@@ -113,10 +117,10 @@ copyright:
                             <!-- <header><h3></h3></header> -->
                             <ul>
                                 {% for m in page.leftmenu %}
-                                <li>
+                                <li id="{{ m.id }}">
                                     <a href="{{ m.url }}">{{ m.ttl }}</a>
                                     {% if m.id %}
-                                    <ul id="{{ m.id }}">
+                                    <ul>
                                         {% for sm in page.[m.id] %}
                                         <li><a href="{{ sm.url }}">{{ sm.ttl }}</a></li>
                                         {% endfor %}
