@@ -325,9 +325,14 @@ a code {
 }
 
 #testdrive {
+    display: block;
     background: url("../img/testdrive.png") no-repeat top center;
     height: 335px;
-    width: 450px;
+    text-align: center;
+    text-indent: -9999px;
+}
+#testdrive-intro p {
+    text-align: justify;
 }
 
 #content #pnf header a {
