@@ -43,7 +43,7 @@ section, article, p {
     overflow: auto;        /* needed for the sticky footer */
     padding-bottom: 186px; /* needed for the sticky footer */
     margin: 0 auto;
-    width: 940px;
+    width: 980px;
 }
 
 #header {
