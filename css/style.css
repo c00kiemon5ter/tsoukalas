@@ -311,6 +311,11 @@ a.clrblue {
     color: #600;
 }
 
+#sitemap a {
+    text-decoration: none;
+    color: blue;
+}
+
 code {
     font-size: 16px;
     font-weight: bold;
