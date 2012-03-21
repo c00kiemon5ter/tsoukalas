@@ -1,3 +1,38 @@
 ---
 layout: default
+title: Σχολή Οδηγών - Πάνος Τσουκαλάς
+photos:
+    - url: img/photos/auto_0.jpg
+      alt: Αυτόματο Εκπαιδευτικό Όχημα 1
+    - url: img/photos/auto_2.jpg
+      alt: Αυτόματο Εκπαιδευτικό Όχημα 2
+    - url: img/photos/auto_3.jpg
+      alt: Σαλόνι Εκπαιδευτικoύ Οχήματος 1
+    - url: img/photos/auto_4.jpg
+      alt: Σαλόνι Εκπαιδευτικού Οχήματος 2
+    - url: img/photos/auto_6.jpg
+      alt: Αυτόματο Εκπαιδευτικό Όχημα 3
+    - url: img/photos/auto_7.jpg
+      alt: Αυτόματο Εκπαιδευτικό Όχημα 4
+    - url: img/photos/auto_9.jpg
+      alt: Σαλόνι Εκπαιδευτικού Οχήματος 3
+jscripts:
+    - url: js/jquery.colorbox-min.js
+    - url: js/imagegallery.js
 ---
+
+ <link rel="stylesheet" href="css/colorbox.css	" type="text/css" media="screen, projection" />
+{% for js in page.jscripts %}
+        <script type="text/javascript" src="{{ js.url }}"></script>
+{% endfor %}
+<section>
+    <article id="startpage">
+
+        <p>
+		{% for photo in page.photos %}
+            <a class="group1" href="{{ photo.url }}" title="{{ photo.alt }}"><img class="thumbnail" src="{{ photo.url }}" alt="{{ photo.alt }}" /></a>
+        {% endfor %}
+        </p>
+
+    </article>
+</section>

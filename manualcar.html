@@ -1,3 +1,45 @@
 ---
 layout: default
+title: Σχολή Οδηγών - Πάνος Τσουκαλάς
+photos:
+    - url: img/photos/auto_5.jpg
+      alt: Εκπαιδευτικά Οχήματα 1
+    - url: img/photos/auto_8.jpg
+      alt: Εκπαιδευτικό Όχημα 1
+    - url: img/photos/auto_10.jpg
+      alt: Εκπαιδευτικό Όχημα 2
+    - url: img/photos/auto_11.jpg
+      alt: Εκπαιδευτικά Οχήματα 2
+    - url: img/photos/auto_12.jpg
+      alt: Εκπαιδευτικό Όχημα 3
+    - url: img/photos/auto_13.jpg
+      alt: Εκπαιδευτικό Όχημα 4
+    - url: img/photos/auto_14.jpg
+      alt: Εκπαιδευτικά Οχήματα 3
+    - url: img/photos/auto_15.jpg
+      alt: Εκπαιδευτικά Οχήματα 4
+    - url: img/photos/auto_16.jpg
+      alt: Εκπαιδευτικά Οχήματα 5
+    - url: img/photos/auto_17.jpg
+      alt: Εκπαιδευτικά Οχήματα 6
+jscripts:
+    - url: js/jquery.colorbox-min.js
+    - url: js/imagegallery.js
 ---
+
+ <link rel="stylesheet" href="css/colorbox.css	" type="text/css" media="screen, projection" />
+{% for js in page.jscripts %}
+        <script type="text/javascript" src="{{ js.url }}"></script>
+{% endfor %}
+<section>
+    <article id="startpage">
+
+        <p>
+		{% for photo in page.photos %}
+            <a class="group1" href="{{ photo.url }}" title="{{ photo.alt }}"><img class="thumbnail" src="{{ photo.url }}" alt="{{ photo.alt }}" /></a>
+        {% endfor %}
+        <span style='display: inline-block;visibility: hidden;width:100%'></span>	
+        </p>
+
+    </article>
+</section>
