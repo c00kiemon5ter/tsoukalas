@@ -123,8 +123,12 @@ section, article, p {
     float: right;
     list-style-type: none;
     margin: 0 6px;
-    background: url(../img/topmenu/cone.png) no-repeat;
+    background: url("../img/topmenu/cone.png") no-repeat;
     background-size: 28px;
+}
+.lavaLamp li.current:nth-last-child(2) { /* flow horizantally */
+    background: url("../img/topmenu/cone.png") no-repeat 95%;
+    background-size: 20px;
 }
 .lavaLamp li.back {     /* the bg */
     position: absolute; /* moves wherever we tell it to */
@@ -156,7 +160,7 @@ section, article, p {
     -moz-transition: all .2s ease-in-out;
 }
 .lavaLamp li:hover:nth-last-child(2) {
-    background: rgba(0,0,0,.20) url(../img/topmenu/cone.png) 95% no-repeat;
+    background: rgba(0,0,0,.20) url("../img/topmenu/cone.png") no-repeat 95%;
     background-size: 20px;
 }
 
