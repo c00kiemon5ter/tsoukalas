@@ -57,7 +57,6 @@ section, article, p {
     float: right;
     width: 280px;
     border-radius: 0 0 0 22px;
-    margin-bottom: 10px;
 }
 #header #weather {
     text-align: right;
@@ -96,6 +95,7 @@ section, article, p {
     font-size: 0.8em;
 }
 .weatherLink {
+    display: none;
     text-align: left;
     font-size: 0.8em;
 }
@@ -106,7 +106,6 @@ section, article, p {
     background: url("../img/topmenu/menu_bg_road.png") repeat;
     padding: 6px;
     margin-top: 0;
-
     border-radius : 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
