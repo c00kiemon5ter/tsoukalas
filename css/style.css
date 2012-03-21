@@ -210,8 +210,8 @@ section, article, p {
 #leftmenu ul {
     margin: 5px;
     padding: 5px;
-    background: #79cbe3;
     background: #777;
+    border:2px double #bcbcbc;
     border-radius: 12px;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
@@ -375,7 +375,9 @@ footer #road {
 
 .thumbnail {
 	width: 160px;
-	padding: 5px;
-	background: white;
-	border: 1px solid #BBB;
+	border: 6px double #bcbcbc;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+
 }
