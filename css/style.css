@@ -198,7 +198,7 @@ section, article, p {
     width: 250px;
     height: 84px;
     text-indent: -9999px;
-    margin: 5px;
+    margin: 5px 0 2em;
     border-radius : 12px;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
@@ -231,6 +231,9 @@ section, article, p {
     font-weight: bold;
     text-decoration: none;
 }
+#leftmenu ul li a:not(.greensign):hover {
+    background: url("../img/yellowsign.png") no-repeat center right;
+}
 
 #licenses ul,
 #services ul {
@@ -239,6 +242,10 @@ section, article, p {
 #licenses a.greensign,
 #services a.greensign {
     background: url("../img/greensign.png") no-repeat center right;
+}
+#licenses ul li a,
+#services ul li a {
+    background-size: 200px;
 }
 
 #content {
