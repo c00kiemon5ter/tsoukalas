@@ -228,6 +228,11 @@ section, article, p {
     text-decoration: none;
 }
 
+#licenses,
+#services {
+    display: none;
+}
+
 #content {
     display: table-cell;
     padding: 0 1em;

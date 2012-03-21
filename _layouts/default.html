@@ -6,27 +6,53 @@ author-url: http://www.webwizards.gr
 favico: favicon.ico
 css: css/style.css
 topmenu:
-    - id:  Αρχική
+    - ttl: Αρχική
       url: index.html?0
-    - id:  Sitemap
+    - ttl: Sitemap
       url: sitemap?1
-    - id:  Eπικοινωνία
+    - ttl: Eπικοινωνία
       url: contact.html?2
-    - id:  Online Test
+    - ttl: Online Test
       url: testdrive.html
 leftmenu:
-    - id:  Αυτόματο Εκπαιδευτικό Όχημα
+    - ttl: Αυτόματο Εκπαιδευτικό Όχημα
       url: autocar.html
-    - id:  Manual Εκπαιδευτικά Οχήματα
+    - ttl: Manual Εκπαιδευτικά Οχήματα
       url: manualcar.html
-    - id:  Διπλώματα Οδήγησης
+    - ttl: Διπλώματα Οδήγησης
       url: licenses.html
-    - id:  Υπηρεσίες
+      id: licenses
+    - ttl: Υπηρεσίες
       url: services.html
-    - id:  Μετεκπαιδεύσεις
+      id: services
+    - ttl: Μετεκπαιδεύσεις
       url: metatrain.html
-    - id:  Photo Gallery
+    - ttl: Photo Gallery
       url: gallery.html
+licenses:
+    - ttl: Δίπλωμα Μοτοσικλέτας Α1-Α'
+      url: licensesΑ1.html
+    - ttl: Δίπλωμα Αυτοκινήτου Β'
+      url: licenseΒ.html
+    - ttl: Δίπλωμα Φορτηγού Γ'
+      url: licenseC.html
+    - ttl: Δίπλωμα Λεωφορείου Δ'
+      url: licenseD.html
+    - ttl: Δίπλωμα Νταλίκας ΕΓ'
+      url: licenseE.html
+services:
+    - ttl: Νέου τύπου Δίπλωμα
+      url: newlicense.html
+    - ttl: Αναθεώρηση Διπλώματος
+      url: reviewlicense.html
+    - ttl: Απώλεια Διπλώματος
+      url: lostlicense.html
+    - ttl: Ειδικές Άδειες Ταξί
+      url: taxi.html
+    - ttl: Κ.Τ.Ε.Ο.
+      url: kteo.html
+    - ttl: Μεταβιβάσεις
+      url: transit.html
 jscripts:
     - url: js/jquery.min.js
     - url: js/jquery.easing.js
@@ -71,7 +97,7 @@ copyright:
                 <nav id="topmenu">
                     <ul class="lavaLamp">
                         {% for m in page.topmenu %}
-                        <li><a href="{{ m.url }}">{{ m.id }}</a></li>
+                        <li><a href="{{ m.url }}">{{ m.ttl }}</a></li>
                         {% endfor %}
                     </ul>
                 </nav>
@@ -87,7 +113,16 @@ copyright:
                             <!-- <header><h3></h3></header> -->
                             <ul>
                                 {% for m in page.leftmenu %}
-                                <li><a href="{{ m.url }}">{{ m.id }}</a></li>
+                                <li>
+                                    <a href="{{ m.url }}">{{ m.ttl }}</a>
+                                    {% if m.id %}
+                                    <ul id="{{ m.id }}">
+                                        {% for sm in page.[m.id] %}
+                                        <li><a href="{{ sm.url }}">{{ sm.ttl }}</a></li>
+                                        {% endfor %}
+                                    </ul>
+                                    {% endif %}
+                                </li>
                                 {% endfor %}
                             </ul>
                         </nav>
