@@ -316,11 +316,12 @@ a code {
     color: blue;
 }
 
-p.map {
+#contact p {
+    text-align: center;
+}
+#contact small {
     font-size: small;
     font-style: italic;
-    text-align: center;
-    margin-top: 0;
 }
 
 #testdrive {
