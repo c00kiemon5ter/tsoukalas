@@ -9,16 +9,17 @@ html, body {
 }
 
 body {
-    font: 16px Helvetica, Arial, sans-serif;
+    font: 16px Helvetica, Arial, sans-serif, serif;
     background: url("../img/bg.png") repeat bottom left;
     margin: 0 auto;
     padding: 0;
 }
 
 h2 {
+    margin: 0;
+    padding: 0;
     font-size: 28px;
     line-height: 44px;
-    padding: 12px 0;
 }
 
 h3 {
@@ -252,17 +253,22 @@ section, article, p {
     padding: 0 1em;
     vertical-align: middle;
 }
-
-#content article > p {
-    text-align: justify;
-}
-
-#content p {
+#content h2 {
     text-align: center;
+    font-style: italic;
+    border-bottom: 2px dotted #ccc;
+}
+#content p {
+    text-align: justify;
 }
 
 #startpage header {
     margin-bottom: 3em;
+    text-align: center;
+}
+
+#startpage p {
+    text-align: justify;
 }
 
 #banner {
