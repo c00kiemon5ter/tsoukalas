@@ -6,7 +6,7 @@
 
 html, body {
     height: 100%; /* needed for the sticky footer */
-    min-width: 980px; /* #idented width */
+    min-width: 1000px; /* #idented width */
 }
 
 body {
@@ -44,7 +44,7 @@ section, article, p {
     overflow: auto;        /* needed for the sticky footer */
     padding-bottom: 186px; /* needed for the sticky footer */
     margin: 0 auto;
-    width: 980px;
+    width: 1000px;
 }
 
 #header {
