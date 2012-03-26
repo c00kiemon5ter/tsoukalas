@@ -195,13 +195,17 @@ section, article, p {
 #logo {
     display: block;
     background: url("../img/logo.png") no-repeat center center;
-    width: 250px;
-    height: 84px;
+    background: url("../img/nlogo.png") no-repeat center center;
+    width: 300px;
+    height: 200px;
     text-indent: -9999px;
-    margin: 5px 0 1.5em;
-    border-radius : 12px;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
+    margin: 5px 0 1em;
+    border-radius : 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
 }
 
 #leftmenu {
