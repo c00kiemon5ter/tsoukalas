@@ -6,7 +6,7 @@
 
 html, body {
     height: 100%; /* needed for the sticky footer */
-    min-width: 1000px; /* #idented width */
+    min-width: 1050px; /* #idented width */
 }
 
 body {
@@ -44,7 +44,7 @@ section, article, p {
     overflow: auto;        /* needed for the sticky footer */
     padding-bottom: 186px; /* needed for the sticky footer */
     margin: 0 auto;
-    width: 1000px;
+    width: 1050px;
 }
 
 #header {
@@ -126,7 +126,7 @@ section, article, p {
     background: url("../img/topmenu/cone.png") no-repeat;
     background-size: 28px;
 }
-.lavaLamp li:nth-last-child(3) { /* matches eco driving element */
+.lavaLamp li:nth-last-child(4) { /* matches eco driving element */
     background: url("../img/topmenu/eco.png") no-repeat 90% center;
 }
 .lavaLamp li.current:nth-last-child(2) {
@@ -166,7 +166,7 @@ section, article, p {
     background: rgba(0,0,0,.20) url("../img/topmenu/cone.png") no-repeat 95%;
     background-size: 20px;
 }
-.lavaLamp li:hover:nth-last-child(3) { /* matches eco driving element */
+.lavaLamp li:hover:nth-last-child(4) { /* matches eco driving element */
     background: rgba(0,0,0,.20) url("../img/topmenu/eco.png") no-repeat 90% center;
 }
 
