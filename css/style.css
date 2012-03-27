@@ -249,6 +249,13 @@ section, article, p {
     background: url("../img/yellowsign.png") no-repeat center right;
 }
 
+#leftmenu ul li ul li a {
+    background: url("../img/subsign.png") no-repeat center right;
+}
+#leftmenu ul li ul li:first-child a {
+    background: url("../img/subsign.png") no-repeat center right;
+}
+
 #licenses ul,
 #services ul {
     display: none;
