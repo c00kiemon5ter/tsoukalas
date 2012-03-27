@@ -4,7 +4,9 @@ keywords: σχολή οδηγών τσουκαλάς παναγιώτης πάν
 author: webwizards.gr
 author-url: http://www.webwizards.gr
 favico: favicon.ico
-css: /css/style.css
+css:
+    - /css/style.css
+    - css/style.css
 topmenu:
     - ttl: Αρχική
       url: index.html?0
@@ -72,7 +74,9 @@ copyright:
         <meta name="language" content="el" />
         <title>{{ page.title }}</title>
         <link rel="shortcut icon" type="image/x-icon" href="{{ page.favico }}" />
-        <link rel="stylesheet" href="{{ page.css }}" type="text/css" media="screen, projection" />
+        {% for s in page.css %}
+        <link rel="stylesheet" href="{{ s }}" type="text/css" media="screen, projection" />
+        {% endfor %}
         {% for js in page.jscripts %}
         <script type="text/javascript" src="{{ js.url }}"></script>
         {% endfor %}
