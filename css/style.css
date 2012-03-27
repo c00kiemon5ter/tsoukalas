@@ -291,9 +291,11 @@ section, article, p {
 .clrgreen  { color: green;  }
 .clrblue   { color: blue;   }
 .clryellow { color: orange; }
-a.clrblue {
+
+a.clrred, a.clryellow, a.clrgreen, a.clrblue {
     font-weight: bold;
-    text-decoration: none;
+    text-decoration: underline;
+    font-size: smaller;
 }
 
 #startpage p.sig {
