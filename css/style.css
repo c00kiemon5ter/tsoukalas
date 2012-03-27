@@ -181,7 +181,7 @@ section, article, p {
     height: 30px;
     top: 7px;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
     color: #fff;
 }
@@ -256,15 +256,6 @@ section, article, p {
     background: url("../img/subsign.png") no-repeat center right;
 }
 
-#whos {
-    text-align: center;
-    line-height: 44px;
-    border-top: 1px dotted #999;
-    border-bottom: 1px dotted #999;
-    margin: 0 30px;
-    font-weight: bold;
-}
-
 #licenses ul,
 #services ul {
     display: none;
@@ -276,6 +267,69 @@ section, article, p {
 #licenses ul li a,
 #services ul li a {
     background-size: 200px;
+}
+
+#slogan {
+    display: table-cell;
+    height: 220px; /* match logo size */
+}
+#slogan p {
+    font-size: small;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 1em 1.5em;
+    color: #600; /* match footer */
+    background: url("../img/quote.gif") no-repeat top left,
+                url("../img/quote_rev.gif") no-repeat bottom right;
+}
+
+#rightmenu {
+    max-width: 190px;
+    margin: 0 auto;
+}
+#rightmenu ul {
+    margin: 5px;
+    padding: 5px;
+    background: #777;
+    border:2px double #bcbcbc;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+}
+#rightmenu ul li {
+    list-style-type: none;
+    margin: 10px 5px;
+    overflow: hidden;
+    text-align: center;
+}
+#rightmenu ul li a {
+    display: block;
+    height: 50px;
+    padding: 10px;
+    color: whitesmoke;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid whitesmoke;
+    background: #008ec0;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+}
+#rightmenu ul li:first-child a {
+    background: #379400;
+}
+#rightmenu ul li:hover a {
+    border: 2px solid yellow;
+}
+
+#whos {
+    text-align: center;
+    line-height: 44px;
+    border-top: 1px dotted #999;
+    border-bottom: 1px dotted #999;
+    margin: 0 30px;
+    font-weight: bold;
 }
 
 #content {
@@ -290,6 +344,11 @@ section, article, p {
 }
 #content p {
     text-align: justify;
+}
+
+#content iframe {
+    text-align: center;
+    margin: 1em auto;
 }
 
 #startpage header {
@@ -327,22 +386,6 @@ a.clrred, a.clryellow, a.clrgreen, a.clrblue {
 
 #startpage p.sig {
     text-align: right;
-}
-
-#slogan {
-    display: table-cell;
-    width: 14em;
-    vertical-align: middle;
-}
-#slogan p {
-    font-size: small;
-    font-style: italic;
-    font-weight: bold;
-    text-align: center;
-    padding: 1.5em 1em;
-    background: url("../img/quote.gif") no-repeat top left,
-                url("../img/quote_rev.gif") no-repeat bottom right;
-    color: #600;
 }
 
 #sitemap a {

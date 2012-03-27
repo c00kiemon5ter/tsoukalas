@@ -18,7 +18,7 @@ topmenu:
       url: ecodriving.html?3
     - ttl: Χρήσιμα Link
       url: link.html?4
-    - ttl: Online Test Drive
+    - ttl: Online Test Drive!
       url: testdrive.html?5
 leftmenu:
     - ttl: Online Test Drive
@@ -35,8 +35,6 @@ leftmenu:
       id: services
     - ttl: Μετεκπαιδεύσεις
       url: metatrain.html
-    - ttl: Photo Gallery
-      url: gallery.html
 licenses:
     - ttl: Δίπλωμα Μοτοσικλέτας Α1-Α'
       url: licenseA.html
@@ -57,6 +55,13 @@ services:
       url: lost.html
     - ttl: Ειδικές Άδειες Ταξί
       url: taxi.html
+rightmenu:
+    - ttl: Eco-driving
+      url: ecodriving.html?3
+    - ttl: Μάθε πως λειτουργεί το αυτοκίνητο
+      url: learn.html
+    - ttl: Photo Gallery
+      url: gallery.html
 jscripts:
     - url: js/jquery.min.js
     - url: js/jquery.easing.js
@@ -136,7 +141,34 @@ copyright:
                                 {% endfor %}
                             </ul>
                         </nav>
+                    </aside>
 
+                    <!-- Main Content -->
+                    <section id="content">
+                        {{ content }}
+                    </section>
+
+                    <aside>
+                        <!-- fancy slogan -->
+                        <div id="slogan">
+                            <p>
+                                Σιγουριά, είναι να οδηγείς έχοντας στο αυτοκίνητο σου, ένα δυνατό χαρτί,
+                                <br/> το δίπλωμά σου. <br/> Για μένα τιμητική διάκριση.
+                            </p>
+                        </div>
+
+                        <!-- right menu list -->
+                        <nav id="rightmenu">
+                            <ul>
+                                {% for m in page.rightmenu %}
+                                <li id="{{ m.id }}">
+                                    <a href="{{ m.url }}">{{ m.ttl }}</a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </nav>
+
+                        <!-- connected users -->
                         <p id="whos">
                             Online Χρήστες:
                             <br/>
@@ -148,19 +180,7 @@ copyright:
                             <!-- I know this is unethical; but this client .. -->
                             <script type="text/javascript">$(function(){ $('#whos a').click(function(){ location.reload(); });})</script>
                         </p>
-
                     </aside>
-
-                    <!-- Main Content -->
-                    <section id="content">
-                        {{ content }}
-                    </section>
-                    <div id="slogan">
-                        <p>
-                            Σιγουριά, είναι να οδηγείς έχοντας στο αυτοκίνητο σου, ένα δυνατό χαρτί,
-                            <br/> το δίπλωμά σου. <br/> Για μένα τιμητική διάκριση.
-                        </p>
-                    </div>
                 </section>
             </div>
         </div>
