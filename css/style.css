@@ -216,6 +216,7 @@ section, article, p {
 
 #leftmenu {
     max-width: 250px;
+    margin: 0 auto;
 }
 #leftmenu ul {
     margin: 5px;
