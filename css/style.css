@@ -262,7 +262,7 @@ section, article, p {
 #content {
     display: table-cell;
     padding: 0 1em;
-    vertical-align: middle;
+    vertical-align: top;
 }
 #content h2 {
     text-align: center;
@@ -288,6 +288,7 @@ section, article, p {
     background-size: 420px 116px;
     text-indent: -9999px;
     height: 118px;
+    margin: 50px 0;
 }
 
 #startpage span {
