@@ -256,6 +256,15 @@ section, article, p {
     background: url("../img/subsign.png") no-repeat center right;
 }
 
+#whos {
+    text-align: center;
+    line-height: 44px;
+    border-top: 1px dotted #999;
+    border-bottom: 1px dotted #999;
+    margin: 0 30px;
+    font-weight: bold;
+}
+
 #licenses ul,
 #services ul {
     display: none;
