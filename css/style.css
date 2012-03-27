@@ -114,19 +114,22 @@ section, article, p {
     -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
     -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
 }
-.lavaLamp li { /* flow horizantally */
+.lavaLamp li {
     float: left;
     list-style-type: none;
     margin: 0 6px;
 }
-.lavaLamp li:nth-last-child(2) { /* flow horizantally */
+.lavaLamp li:nth-last-child(2) { /* matches "online test drive" element */
     float: right;
     list-style-type: none;
     margin: 0 6px;
     background: url("../img/topmenu/cone.png") no-repeat;
     background-size: 28px;
 }
-.lavaLamp li.current:nth-last-child(2) { /* flow horizantally */
+.lavaLamp li:nth-last-child(3) { /* matches eco driving element */
+    background: url("../img/topmenu/eco.png") no-repeat 90% center;
+}
+.lavaLamp li.current:nth-last-child(2) {
     background: url("../img/topmenu/cone.png") no-repeat 95%;
     background-size: 20px;
 }
@@ -162,6 +165,9 @@ section, article, p {
 .lavaLamp li:hover:nth-last-child(2) {
     background: rgba(0,0,0,.20) url("../img/topmenu/cone.png") no-repeat 95%;
     background-size: 20px;
+}
+.lavaLamp li:hover:nth-last-child(3) { /* matches eco driving element */
+    background: rgba(0,0,0,.20) url("../img/topmenu/eco.png") no-repeat 90% center;
 }
 
 #topmenu li a {
@@ -339,6 +345,13 @@ a code {
 #contact small {
     font-size: small;
     font-style: italic;
+}
+
+#ecodriving {
+    display: block;
+    background: url("../img/ecologo.png") no-repeat center center;
+    text-indent: -9999px;
+    height: 130px;
 }
 
 #testdrive {
