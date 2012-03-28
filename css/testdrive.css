@@ -1,13 +1,15 @@
-{
+html {
     padding: 0;
     margin: 0;
+    width: 100%;
+    height: 100%;
 }
 
 body {
     background: #c1dfdd;
     margin: 0 auto;
     text-align: center;
-    width: 940px;
+    width: 100%;
     height: 100%;
 }
 
@@ -16,19 +18,37 @@ body {
     height: 100%;
 }
 
-#main-box {
-    position: relative;
+#main {
+	display: table;
     width: 100%;
-    height: 760px;
-    background: #c1dfdd url('../img/testDrive/welc03.gif') no-repeat center center;
+    height: 100%;
+}
+
+#main-box {
+	display: table-row;
+    width: 100%;
+    height: 100%;
+}
+#bg-img {
+	width:100%;
 }
 #main-left {
-    float: left;
-    width: 40%;
+	padding-top: 5%;
+	vertical-align: top;
+    display: table-cell;
+    width: 25%;
+}
+#main-middle {
+	padding-top: 5%;
+	vertical-align: top;
+    display: table-cell;
+    width: 50%;
 }
 #main-right {
-    float: right;
-    width: 40%;
+	padding-top: 5%;
+	vertical-align: top;
+    display: table-cell;
+    width: 25%;
 }
 
 #wrap {
@@ -45,7 +65,7 @@ body {
 
 footer {
     position: relative;
-    margin: -2em auto 0;
+    margin: -3.3em auto 0;
     clear: both;
     width: 100%;
     font-size: 18px;
@@ -208,7 +228,7 @@ tr:hover {
     display: block;
     max-width: 140px;
     min-width: 70px;
-    width: 50%;
+    width: 100%;
 }
 
 img {
@@ -217,10 +237,10 @@ img {
 }
 
 .menuright {
-    margin: 33% 0 0 5px;
+    margin: 0 0 10% 5px;
 }
 .menuleft {
-    margin: 25% 0 0 50%;
+    margin: 0 0 10% 50%;
 }
 .menuright, .menuleft {
     cursor: pointer;
