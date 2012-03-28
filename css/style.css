@@ -247,11 +247,14 @@ section, article, p {
     color: yellow;
 }
 
+#leftmenu ul li ul li a:first-child,
 #leftmenu ul li ul li a {
-    background: url("../img/subsign.png") no-repeat center right;
+    background: url("../img/lightgreensign.png") no-repeat center right;
 }
-#leftmenu ul li ul li:first-child a {
-    background: url("../img/subsign.png") no-repeat center right;
+#leftmenu #licenses ul li:hover a,
+#leftmenu #services ul li:hover a {
+    background: url("../img/yellowlightgreensign.png") no-repeat center right;
+    color: whitesmoke;
 }
 
 #licenses ul,
