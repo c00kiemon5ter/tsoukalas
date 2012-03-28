@@ -126,9 +126,6 @@ section, article, p {
     background: url("../img/topmenu/cone.png") no-repeat;
     background-size: 28px;
 }
-.lavaLamp li:nth-last-child(4) { /* matches eco driving element */
-    background: url("../img/topmenu/eco.png") no-repeat 90% center;
-}
 .lavaLamp li.current:nth-last-child(2) {
     background: url("../img/topmenu/cone.png") no-repeat 95%;
     background-size: 20px;
@@ -165,9 +162,6 @@ section, article, p {
 .lavaLamp li:hover:nth-last-child(2) {
     background: rgba(0,0,0,.20) url("../img/topmenu/cone.png") no-repeat 95%;
     background-size: 20px;
-}
-.lavaLamp li:hover:nth-last-child(4) { /* matches eco driving element */
-    background: rgba(0,0,0,.20) url("../img/topmenu/eco.png") no-repeat 90% center;
 }
 
 #topmenu li a {
@@ -316,8 +310,8 @@ section, article, p {
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
 }
-#rightmenu ul li:first-child a {
-    background: #379400;
+#rightmenu ul li:first-child a { /* matches eco driving element */
+    background: #379400 url("../img/topmenu/eco.png") no-repeat 90% center;
 }
 #rightmenu ul li:hover a {
     border: 2px solid yellow;
