@@ -39,9 +39,13 @@ body {
     width: 20%;
 	vertical-align: middle;
 }
-#main-left li, #main-right li {
+#main-right li {
     list-style-type: none;
     margin-top: 3em;
+}
+#main-left li {
+    list-style-type: none;
+    margin-top: 6em;
 }
 
 .menuimg {
