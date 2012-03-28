@@ -385,7 +385,8 @@ a.clrred, a.clryellow, a.clrgreen, a.clrblue {
 }
 
 #startpage p.sig {
-    text-align: right;
+    margin-left: 40%;
+    text-align: center;
 }
 
 #sitemap a {
