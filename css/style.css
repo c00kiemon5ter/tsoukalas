@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-    font: 16px Helvetica, Arial, sans-serif, serif;
+    font: 16px Helvetica, Arial, sans-serif;
     background: url("../img/bg.png") repeat bottom left;
     margin: 0 auto;
     padding: 0;
