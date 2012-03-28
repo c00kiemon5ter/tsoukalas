@@ -242,6 +242,10 @@ section, article, p {
 #leftmenu ul li a:not(.greensign):hover {
     background: url("../img/yellowsign.png") no-repeat center right;
 }
+#leftmenu ul li:first-child:hover a {
+    background: url("../img/yellowgreensign.png") no-repeat center right;
+    color: yellow;
+}
 
 #leftmenu ul li ul li a {
     background: url("../img/subsign.png") no-repeat center right;
