@@ -14,15 +14,24 @@ body {
     background: #c1dfdd;
     margin: 0 auto;
     text-align: center;
-}
-
-#main {
-	display: table;
     width:  auto;
     height: auto;
     max-width:  100%;
     max-height: 100%;
+}
+
+img {
+    width:  auto;
+    height: auto;
+    max-width:  100%;
+    max-height: 100%;
+}
+
+#main {
+	display: table;
     margin: 0 auto;
+    width:  980px;
+    height: auto;
 }
 
 #main-middle {
@@ -54,108 +63,84 @@ body {
 
 #container {
 	display: table;
-    overflow: auto;
-    padding-bottom: 2em;
     background: url(../img/logo.png) no-repeat center top;
-    margin-top: 5px;
-    padding-top: 110px;
-    width: 100%;
+    padding-top: 90px; /* as much as the background img height */
+    margin: 5px auto;
+    width:  auto;
+    height: auto;
+    max-width:  100%;
+    max-height: 100%;
+    overflow: auto;
 }
-
-footer {
-    position: relative;
-    margin: 2em auto 0;
-    clear: both;
-    width: 100%;
-    font-size: 18px;
-}
-footer a {
-    color: #541F1D;
-    text-decoration: none
-}
-
-#menu {
+#questions, #menu {
     display: table-cell;
-    width: 30%;
-    margin-left: 4%;
-    height: 100%;
+    vertical-align: top;
+    padding: 5px;
 }
-
 #questions {
-	vertical-align: top;
-    display: table-cell;
-    width: 60%;
-    padding-left: 1%;
+    min-width: 450px;
+    width: 100%;
+}
+#menu {
+    padding-left: 20px;
 }
 
 #title {
     display: block;
-    margin-top: 30px;
-    font-size: 2.5em;
     text-align: center;
-    width: 100%;
+    font-size: 1.6em;
+    margin: 1em .5em .5em;
+    color: #333;
 }
-
 #question {
-    padding-top: 30px;
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: bold;
-    min-height: 4em;
-    width: 100%;
+    margin: 1em .5em .5em;
 }
-
-#image-box {
-    display: block;
-    padding: 5%;
-    height: 30%;
-    width:85%;
+#choices {
+    margin: 1em;
+}
+.choice {
+    cursor:pointer;
+    width: 100%;
+    height: 6em;
+    margin: 1em;
+    padding: .2em;
+    font-size: 1.2em;
+    text-align: center;
+    overflow: hidden;
+}
+a:target > textarea.choice {
+    background-color: #FF9;
 }
 
 #image-container {
-	max-width: 100%;
     min-height: 326px;
-    width:100%;
-    height: 326px;
-}
-
-#image {
-	width: 100%;
-	max-width: 100%;
+	max-width:  100%;
     max-height: 100%;
+    width:  auto;
+    height: auto;
+}
+#image {
     display: block;
-    -moz-box-shadow: 3px 3px 4px #000;
-    -webkit-box-shadow: 3px 3px 4px #000;
-    box-shadow: 3px 3px 4px #000;
-    /* For IE 8 */
-    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
-    /* For IE 5.5 - 7 */
-    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+    margin: 0 auto;
+    width:  auto;
+    height: auto;
+    max-width:  100%;
+    max-height: 100%;
 }
 
-#choices {
-    padding-top: 1%;
+#buttons {
+    float: right;
+    width: 182px;
+    margin: 20px 50px;
 }
-
-.choice {
-    width: 100%;
-    height: 6em;
-    margin: 4% 0;
-    resize:none;
-    cursor:pointer;
-    font-size: 1.2em;
-}
-
-a:target > textarea.choice {
-    background-color: #FFFF99;
-}
-
 #time-box {
     float: right;
     text-align: center;
     font-size: 1.4em;
     color: #0F5252;
 }
-
 #time-progress {
     background-color: #B1E6E6;
     margin: 20px 0;
@@ -169,12 +154,6 @@ a:target > textarea.choice {
     filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
 }
 
-#buttons {
-    float: right;
-    width: 182px;
-    margin: 20px 50px;
-}
-
 button {
     min-height: 111px;
     -moz-box-shadow: 3px 3px 4px #000;
@@ -185,20 +164,17 @@ button {
     /* For IE 5.5 - 7 */
     filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
 }
-
 #confirm {
     background-image: url('../img/testDrive/apantdis.gif');
     width: 181px;
     height: 111px;
     margin-bottom: 50px;
 }
-
 #next {
     background-image: url('../img/testDrive/epomeni3.gif');
     width: 181px;
     height: 111px;
 }
-
 #next, #confirm {
     cursor: pointer;
 }
@@ -233,13 +209,6 @@ table, td, th {
 
 tr:hover {
     background-color: #9CC;
-}
-
-img {
-    width:  auto;
-    height: auto;
-    max-width:  100%;
-    max-height: 100%;
 }
 
 .white {
@@ -318,6 +287,18 @@ img {
 #img-res {
     height: 24%;
     width: 24%;
+}
+
+footer {
+    position: relative;
+    margin: 2em auto 0;
+    clear: both;
+    width: 100%;
+    font-size: 18px;
+}
+footer a {
+    color: #541F1D;
+    text-decoration: none
 }
 
 /*
