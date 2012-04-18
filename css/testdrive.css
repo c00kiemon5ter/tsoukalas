@@ -73,10 +73,11 @@ img {
 }
 #questions {
     min-width: 450px;
-    max-width: 100%;
+    width: 100%;
 }
 #menu {
-    padding-left: 20px;
+    padding: 0 1em 0 2em;
+    margin: 0 auto;
 }
 
 #title {
@@ -111,38 +112,22 @@ a:target > textarea.choice {
 
 #image-container {
     min-height: 326px;
-	max-width:  100%;
-    max-height: 100%;
-    width:  auto;
-    height: auto;
-}
-#image {
-    display: block;
-    margin: 0 auto;
-    width:  auto;
-    height: auto;
-    max-width:  100%;
-    max-height: 100%;
 }
 
 #buttons {
-    float: right;
-    width: 182px;
-    margin: 20px 50px;
+    min-width: 182px;
 }
 #time-box {
-    float: right;
-    text-align: center;
     font-size: 1.4em;
     color: #0F5252;
 }
 #time-progress {
     background-color: #B1E6E6;
-    margin: 20px 0;
+    margin-top: .2em;
     border: 1px solid black;
+    box-shadow: 3px 3px 4px #000;
     -moz-box-shadow: 3px 3px 4px #000;
     -webkit-box-shadow: 3px 3px 4px #000;
-    box-shadow: 3px 3px 4px #000;
     /* For IE 8 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
     /* For IE 5.5 - 7 */
@@ -150,10 +135,13 @@ a:target > textarea.choice {
 }
 
 button {
-    min-height: 111px;
+    cursor: pointer;
+    width:  182px;
+    height: 111px;
+    margin-top: 1em;
+    box-shadow: 3px 3px 4px #000;
     -moz-box-shadow: 3px 3px 4px #000;
     -webkit-box-shadow: 3px 3px 4px #000;
-    box-shadow: 3px 3px 4px #000;
     /* For IE 8 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
     /* For IE 5.5 - 7 */
@@ -161,17 +149,9 @@ button {
 }
 #confirm {
     background-image: url('../img/testDrive/apantdis.gif');
-    width: 181px;
-    height: 111px;
-    margin-bottom: 50px;
 }
 #next {
     background-image: url('../img/testDrive/epomeni3.gif');
-    width: 181px;
-    height: 111px;
-}
-#next, #confirm {
-    cursor: pointer;
 }
 
 #results {
