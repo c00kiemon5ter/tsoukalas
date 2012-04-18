@@ -155,87 +155,80 @@ button {
 }
 
 #results {
-    display: inline;
-    float: left;
-    width: 40%;
-    margin: 30px;
+    display: table-cell;
+    vertical-align: top;
+    width: 30%;
 }
-
-#description {
-    display:inline;
-    float: right;
-    width:50%;
-}
-
 #result {
-    padding-top: 5%;
+    padding: .5em 0;
     font-size: 1.4em;
 }
-
 #results-table {
-    background-color: #999999;
+    margin: 0 auto;
     border-collapse:collapse;
+    background-color: #999999;
 }
 
 table, td, th {
     border: solid 1px black;
     padding: 3px 10px;
 }
-
 tr:hover {
     background-color: #9CC;
+}
+
+#description {
+    display: table-cell;
+    vertical-align: top;
+    padding-top: 1.5em;
+}
+
+#resbox {
+    margin-top: 2.5em;
+    text-align: center;
+    font-size: 4em;
+}
+#fail {
+    color: red;
+    border: 10px solid red;
+}
+#pass {
+    color: green;
+    border: 10px solid green;
+}
+
+#image-box-res {
+    height: 250px;
+}
+#img-res {
+    max-width: 200px;
+}
+
+.box, .bluebox, .pinkbox {
+    min-height: 5.5em;
+    margin-top: .5em;
+}
+
+.bluebox, .pinkbox {
+    border: solid 1px black;
+}
+.bluebox {
+    background-color: #99CCCC;
+}
+.pinkbox {
+    background-color: #FFCCCC;
 }
 
 .white {
     font-size: 1.5em;
     color: white;
+    text-shadow: 3px 3px 4px #000;
     -moz-text-shadow: 3px 3px 4px #000;
     -webkit-text-shadow: 3px 3px 4px #000;
-    text-shadow: 3px 3px 4px #000;
 }
-
 .gradient {
-    background: -webkit-gradient(
-    linear, 0 0, 100% 100%, from(#0F5252), to(#c1dfdd)
-    );
-
-    background: -moz-linear-gradient(
-    top left, #0F5252, #c1dfdd
-    );
-}
-
-.box {
-    padding-top: 5%;
-    min-height: 6.5em;
-}
-
-.bluebox, .pinkbox {
-    border: solid 1px black;
-    min-height: 5.5em;
-}
-
-.bluebox {
-    background-color: #99CCCC;
-}
-
-.pinkbox {
-    background-color: #FFCCCC;
-}
-
-#fail {
-    color: red;
-    text-align: center;
-    font-size: 3em;
-    border: 10px solid red;
-    padding: 2%;
-}
-
-#pass {
-    color: green;
-    text-align: center;
-    font-size: 4em;
-    border: 10px solid green;
-    padding: 2%;
+    background: -webkit-gradient(linear, 0 0, 100% 100%, from(#0F5252), to(#c1dfdd));
+    background: -moz-linear-gradient(top left, #0F5252, #c1dfdd);
 }
 
 #home-res {
@@ -243,25 +236,6 @@ tr:hover {
     right: 10px;
     top: 10px;
     margin: 30px;
-}
-
-#resbox {
-    padding-top: 200px;
-}
-
-#image-box-res {
-    min-height: 25%;
-    max-height: 25%;
-}
-
-#image-container-res {
-    min-height: 240px;
-    max-height: 150px;
-}
-
-#img-res {
-    height: 24%;
-    width: 24%;
 }
 
 footer {
