@@ -53,10 +53,15 @@ function showQuestion() {
 	document.getElementById('title').innerHTML = words.question+' '+(current+1);
 	document.getElementById('question').innerHTML = question;
 	
-	if(image!=null)
-		document.getElementById('image-container').innerHTML = '<img src="../img/testDrive/'+image+'.jpg" alt="image" id="image" />';
-	else
+	if(image!=null) {		
+		document.getElementById('image-container').innerHTML = '<img src="../img/loading.gif" alt="loading" id="image" />';
+		document.getElementById('preloading').src = '../img/testDrive/'+image+'.jpg';
+		$('#preloading').load(function() {
+		  document.getElementById('image-container').innerHTML = '<img src="../img/testDrive/'+image+'.jpg" alt="image" id="image" />';
+		});
+	} else {
 		document.getElementById('image-container').innerHTML = '';
+	}
 	
 	choicebox = '';
 	for (var i=0;i<choices.length;i++) {
